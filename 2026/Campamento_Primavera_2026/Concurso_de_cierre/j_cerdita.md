@@ -14,3 +14,8 @@ Tu tarea es ayudar a Melisa a calcular cuántas copias de <strong>cerdita</stron
 <p><br></p>
 <h3>Salida</h3>
 <p>Imprime un único número entero correspondiente al resultado de \(C^E\).
+
+
+| Left Align | Center Align | Right Align |
+| :--------- | :-: | ----------: |
+| Item A     |   Item B     |      Item C |
