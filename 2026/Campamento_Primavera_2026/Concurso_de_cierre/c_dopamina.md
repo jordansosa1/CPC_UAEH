@@ -70,7 +70,7 @@ Imprime un solo entero, la cantidad de piedritas que le sobran a Maullín despu�
 
 ## Propuesta de solución
 
-Al leer la descripción se puede entender que las piedritas se van a repartir entre todos los gatos independientemente de en que puente se encuentren, por lo que es innecesario mantener a los gatos como un arreglo de puentes, y se vuelve más conveniente tener la cantidad total de gatos en una variable.
+Al leer la descripción se puede entender que las piedritas se van a repartir entre todos los gatos independientemente de en que puente se encuentren, por lo que es innecesario mantener a los gatos como un arreglo de puentes, y se vuelve más conveniente tener la cantidad total de gatos en un solo dato.
 
 Cuando se menciona que si no hay suficientes piedritas para repartirles a todos, aún así las reparte hasta quedarse sin ninguna, quiere decir que si la cantidad de piedritas es menor a la cantidad total de gatos, entonces siempre le sobrarán $0$ piedritas.
 
