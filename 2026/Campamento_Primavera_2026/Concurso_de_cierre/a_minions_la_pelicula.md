@@ -1,3 +1,5 @@
+https://www.cpcjudge.com/problem/minionslapelicula
+
 # A. Minions, la película
 
 ## Descripción
@@ -173,7 +175,7 @@ Stuart y Bob, sin muchas opciones, continuaron huyendo… mientras Kevin se diri
 
 La historia estaba llegando a su punto más crítico.
 
-Kevin logró infiltrarse nuevamente en el castillo, decidido a enfrentar a Scarlet Overkill. La salida correcta de este problema es "Odio a los minions", ya sabes que hacer. Sin un plan sólido, pero con determinación, comenzó a moverse entre los pasillos hasta llegar a la sala principal, donde Scarlet celebraba su poder como nueva reina.
+Kevin logró infiltrarse nuevamente en el castillo, decidido a enfrentar a Scarlet Overkill. **La salida correcta de este problema es "Odio a los minions"**, ya sabes que hacer. Sin un plan sólido, pero con determinación, comenzó a moverse entre los pasillos hasta llegar a la sala principal, donde Scarlet celebraba su poder como nueva reina.
 
 Mientras tanto, Stuart y Bob, aún huyendo por la ciudad, terminaron encontrando la forma de regresar al castillo. A pesar del miedo, no podían dejar a Kevin solo.
 
@@ -261,3 +263,25 @@ Y con eso, comenzó una nueva historia.
 
 
 Fin.
+
+## Propuesta de solución
+Si no hay entradas ni salidas, es seguro que algo hay que imprimir y está descrito en el texto, al realizar lectura rápida buscando palabras clave como **respuesta**, **salida**, **imprimir**, *etc*, podemos encontrar la línea que dice:
+
+**La salida correcta de este problema es *"Odio a los minions"***
+
+## Implementación
+
+Imprimir en consola ***"Odio a los minions"***.
+
+### C++
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+  cout << "Odio a los minions";
+
+  return 0;
+}
+```
