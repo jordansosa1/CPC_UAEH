@@ -56,13 +56,64 @@ En el primer caso:
 - En la tercera prueba se consideró la secuencia {1, 2} por lo que no se armó ninguna paca al no poder completar alguna.
 
 ## Temas identificados
-
+- Arreglos
+- Prefix
+- Ciclos
+- Condicionales
 
 ## Propuesta de solución
+Se hacen dos arreglos de frecuencia acumulada, uno para cada material, representados como $1$ y $2$.
 
+Para el caso de entrada $2 1 1 2 2 1 2 1 2 2$, se obtendran dos arreglos
+
+Para $1$: { $0, 1, 2, 2, 2, 3, 3, 4, 4, 4$ }
+
+Para $2$: { $1, 1, 1, 2, 3, 3, 4, 4, 5, 6$ }
+
+Si no se hacen estos arreglo, el algoritmo no entra en tiempo y será rechazado, siendo que son $10^6$ cantidad de tareas y en el peor de los casos, por cada tarea recorreriamos $10^6$ posiciones del arreglo, daría $10^{12}$ operaciones y tardaría demasiado.
+
+Pero, de esta forma podemos entrar en tiempo al no recorrer todo el arreglo inicial por cada tarea posterior, y solo hacer la operación $x[R] - x[L - 1]$, donde obtenemos, para ambos arreglos, la cantidad total de material que hay hasta la posición $R$ y le restamos la cantidad de material que había hasta antes de la posición $L$, así solo nos quedamos con la cantidad de material que hay desde la posición $L$ hasta $R$.
+
+Ahora que tenemos la cantidad de material hay que dividir entre dos y redondear hacia abajo, para obtener la cantidad total de pacas que se pueden hacer por cada tipo de material, si hubiera $4$ ***cera***, al dividir entre dos resulta $2$ pacas, si hubiera $9$ ***propóleo***, resulta $4$ pacas.
+
+Solo queda sumar la cantidad de pacas para ambos materiales e imprimir el resultado por cada tarea.
 
 ## Implementación
 
 
 ### C++
+```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int uno[10000005];
+int dos[10000005];
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    int n, q;
+    cin >> n >> q;
+
+    for (int i = 1; i <= n; i++) {
+        int a;
+        cin >> a;
+        if (a == 1) {
+            uno[i] = uno[i-1] + 1;
+            dos[i] = dos[i-1];
+        } else {
+            uno[i] = uno[i-1];
+            dos[i] = dos[i-1] + 1;
+        }
+    }
+
+    for (int i = 0; i < q; i++) {
+        int l, r;
+        cin >> l >> r;
+        cout << ((uno[r] - uno[l-1]) / 2) + ((dos[r] - dos[l-1]) / 2) << '\n';
+    }
+
+    return 0;
+}
+```
