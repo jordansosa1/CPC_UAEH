@@ -1,3 +1,5 @@
+https://www.cpcjudge.com/problem/pacascolmena
+
 # C. Pacas en la colmena
 
 ## Descripción
@@ -64,7 +66,7 @@ En el primer caso:
 ## Propuesta de solución
 Se hacen dos arreglos de frecuencia acumulada, uno para cada material, representados como $1$ y $2$.
 
-Para el caso de entrada $2$ $1$ $1$ $2$ $2$ $1$ $2$ $1$ $2$ $2$, se obtendran dos arreglos
+Para el caso de entrada $2$ $1$ $1$ $2$ $2$ $1$ $2$ $1$ $2$ $2$, se obtendran dos arreglos:
 
 Para $1$: { $0, 1, 2, 2, 2, 3, 3, 4, 4, 4$ }
 
@@ -80,8 +82,20 @@ Solo queda sumar la cantidad de pacas para ambos materiales e imprimir el result
 
 ## Implementación
 
-
 ### C++
+Particularmente C++ tiene el problema de que al declarar un arreglo dentro de main, no tiene valores inicializados, cada posición del arreglo tiene valores basura de la RAM, por lo que para que todos los valores sean inicializados en $0$, lo declaramos fuera de main y le damos el tamaño correspondiente a los límites del problema, que en este caso fue $10^6$ más unas cuantas posiciones más para asegurar que no habrá intentos de acceso de memoria a espacios que no nos corresponden.
+
+Además, al tener variables enteras y dividirlas por un número que nos da un resultado decimal, C++ se encarga de cortar los decimales, si el resultado es $0.5$, dentro de la variable entera el valor será $0$, si el resultado en $5.99999$, la variable entera valdrá $5$.
+
+Normalmente, al ingresar las entradas notamos que para las $Q$ tareas se leen dos valores y se imprime un valor sucesivamente por cada tarea, pero el juez virtual tomará el resultado como erróneo pues no hay un bloque de salidas preciso, sino que están mezcladas las entradas con las salidas. Para solucionar este problema, se usan las líneas: 
+
+```cpp
+cin.tie(0);
+ios::sync_with_stdio(false);
+```
+
+Así pausamos las salidas hasta que todas las entradas se hagan y permitimos que haya un bloque de entradas y un bloque de salidas que el juez virtual sí puede identificar y marcar como correcto.
+
 ```cpp
 #include <bits/stdc++.h>
 
