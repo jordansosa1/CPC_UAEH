@@ -64,7 +64,7 @@ En el primer caso:
 ## Propuesta de solución
 Se hacen dos arreglos de frecuencia acumulada, uno para cada material, representados como $1$ y $2$.
 
-Para el caso de entrada $2 1 1 2 2 1 2 1 2 2$, se obtendran dos arreglos
+Para el caso de entrada 2 1 1 2 2 1 2 1 2 2, se obtendran dos arreglos
 
 Para $1$: { $0, 1, 2, 2, 2, 3, 3, 4, 4, 4$ }
 
