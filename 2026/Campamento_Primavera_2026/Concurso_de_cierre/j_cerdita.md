@@ -70,6 +70,15 @@ Conviene recordar la propiedad **exponente cero** de las leyes de los exponentes
 
 ## Implementación
 
+```mermaid
+graph TD;
+    A([Inicio]) --> B[/Leer cerdita
+        Leer exposiciones/];
+    B --> C(elevar cerdita a la exposiciones)
+    C --> D[\Imprimir resultado\]
+    D --> E([Fin]);
+```
+
 ### C++
 
 Respecto a los límites hay que notar que $C$ tiene un valor entre 1 y 10, mientras que $E$ tiene un valor entre 0 y 10, por lo que, en el peor de los casos, la entrada será 10 10, representado como $10^{10}$, valor que desborda una variable entera **int** de 32 bits, cuyo máximo valor es $10^9$, por lo que se necesita una variable entera de 64 bits, denominada **long long** para poder guardar el valor resultante de la operación.
@@ -82,10 +91,10 @@ En cuanto al funcionamiento de **pow**, perteneciente a la librería **cmath** q
 using namespace std;
 
 int main() {
-    long long c, e;
-    cin >> c >> e;
-    long long r = pow(c, e);
-    cout << r;
+    long long cerdita, exposiciones;
+    cin >> cerdita >> exposiciones;
+    long long resultado = pow(cerdita, exposiciones);
+    cout << resultado;
 
     return 0;
 }
