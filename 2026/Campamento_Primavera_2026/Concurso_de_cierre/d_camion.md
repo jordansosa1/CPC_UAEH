@@ -1,50 +1,90 @@
+# D. Camión
+
+## Descripción
+*"Para acordarme de mí, yo me necesito ahí"*
+
+Una de las mejores partes de la primavera, son las vacaciones. Debido a esto, Felipe por fin puede regresar a su pueblo, y dispuesto a esto él se sube a su camión para ir por un viaje de $46$ kilómetros. Como consecuencia al cansancio, Felipe se duerme al instante de sentarse, por lo que te pide amablemente que lo despiertes cuando solo queden $4$ kilómetros para llegar.
+
+Dada la distancia en metros, si aún le quedan $4,000$ metros o más para llegar a su pueblo imprime **"Zzz"**, si le quedan menos de $4,000$ metros imprime **"Ya merito"**
+
+
+## Entrada
+Un entero $N$ $(1 \leq N \leq 46,000)$, representando la distancia actual que Felipe ha recorrido en metros.
+
+## Salida
+El texto correspondiente a la distancia.
+
+## Ejemplos
+
+### Entrada
+```
+15445
+```
+### Salida
+```
+Zzz
+```
+
+### Entrada
+```
+44575
+```
+### Salida
+```
+Ya merito
+```
+
+### Entrada
+```
+42000
+```
+### Salida
+```
+Zzz
+```
+
+## Notas
+- En el primer caso, a Felipe todavía le quedan $30,555$ metros para llegar.
+- En el segundo caso, solo faltan $1,425$ metros, por lo que ya merito llega.
+- En el tercer caso, quedan exactamente $4,000$ metros, por lo que todavía se puede dormir... aunque sea un metro más.
+
+## Temas identificados
+
+- Condicionales
+
+## Propuesta de solución
+
+Según la descripción el viaje siempre tiene $46$ kilómetros sin importar la entrada, así que podemos restar a $46000$ el número de entrada, pues se expresa en metros, el resultado de la resta debe ser estrictamente menor que $4000$ decir **"Ya merito"**, en caso contrario será **"Zzz"**
+
+## Implementación
+
+Leer la entrada de metros recorridos y hacer la operación $46000-metrosRecorridos$, si es menor a $4000$, imprimir **"Ya merito"**, en caso contrario imprimir **"Zzz"**
+
 ```mermaid
 graph TD;
-    A[Inicio] --> B{¿Hay errores?};
+    A([Inicio]) --> B{¿Hay errores?};
     B -- Sí --> C[Corregir código];
     C --> B;
     B -- No --> D[Desplegar a Producción];
-    D --> E[Fin];
+    D --> E([Fin]);
 ```
 
-Descripción</h3>
-<hr>
-<p><em>"Para acordarme de mí, yo me necesito ahí"</em></p>
-<p><br>
-Una de las mejores partes de la primavera, son las vacaciones. Debido a esto, Felipe por fin puede regresar a su pueblo, y dispuesto a esto él se sube a su camión para ir por un viaje de \(46\) kilómetros. Como consecuencia al cansancio, Felipe se duerme al instante de sentarse, por lo que te pide amablemente que lo despiertes cuando solo queden \(4\) kilómetros para llegar.</p>
-<p>Dada la distancia en metros, si aún le quedan \(4,000\) metros o más para llegar a su pueblo imprime <em>"Zzz"</em>, si le quedan menos de \(4,000\) metros imprime <em>"Ya merito"</em>.</p>
-<p><br></p>
-<h3>Entrada</h3>
-<p>Un entero \(N\) \((1 \leq N \leq 46,000)\), representando la distancia actual que Felipe ha recorrido en metros.</p>
-<p><br></p>
-<h3>Salida</h3>
-<p>El texto correspondiente a la distancia.</p>
-<p><br></p>
-<h3>Ejemplo</h3>
-<hr>
-<h4>Entrada</h4>
+### C++
+```cpp
+#include <bits/stdc++.h>
 
-<pre><code>15445</code></pre>
-<h4>Salida</h4>
+using namespace std;
 
-<pre><code>Zzz</code></pre>
-<p><br></p>
-<h4>Entrada</h4>
+int main() {
+    int metrosRecorridos;
+    cin >> metrosRecorridos;
 
-<pre><code>44575</code></pre>
-<h4>Salida</h4>
+    if (46000 - metrosRecorridos < 4000) {
+        cout << "Ya merito";
+    } else {
+        cout << "Zzz";
+    }
 
-<pre><code>Ya merito</code></pre>
-<p><br></p>
-<h4>Entrada</h4>
-
-<pre><code>42000</code></pre>
-<h4>Salida</h4>
-
-<pre><code>Zzz</code></pre>
-<p><br></p>
-<h3>Notas</h3>
-<p>En el primer caso, a Felipe todavía le quedan \(30,555\) metros para llegar.</p>
-<p>En el segundo caso, solo faltan \(1,425\) metros, por lo que ya merito llega.</p>
-<p>En el tercer caso, quedan exactamente \(4,000\) metros, por lo que todavía se puede dormir... aunque sea un metro más.</p>
-</div>
+    return 0;
+}
+```
