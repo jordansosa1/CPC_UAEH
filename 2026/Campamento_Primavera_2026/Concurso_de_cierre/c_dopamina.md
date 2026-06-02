@@ -84,6 +84,20 @@ Si piedritas es menor que el total de gatos, imprimir $0$.
 
 Si piedritas es mayor o igual que el total de gatos, encontrar la cantidad de piedritas que sobran tras repartir equitativamente entre todos los gatos se debe encontrar el **módulo** de operación $piedritas / totalGatos$, con la siguiente expresión: $piedritas$ % $totalGatos$
 
+```mermaid
+graph TD;
+    A([Inicio]) --> B[/Leer piedritas/]
+    B -- i=0 --> C{Mientras 1 <= i <= 7}
+    C -- Sí --> D[/Leer gatos/]
+    D --> E(Sumar gatos a totalGatos)
+    E --> F(i++)
+    C -- No --> G{piedritas es menor que totalGatos}
+    G -- Sí --> H[\Imprimir 0\]
+    G -- No --> I[\Imprimir piedritas % totalGatos\]
+    H --> J([Fin])
+    I --> J([Fin])
+```
+
 ### C++
 
 ```cpp
