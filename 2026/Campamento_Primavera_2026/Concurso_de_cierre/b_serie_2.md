@@ -1,3 +1,5 @@
+https://www.cpcjudge.com/problem/serie2
+
 # B. Serie 2
 
 ## Descripción
