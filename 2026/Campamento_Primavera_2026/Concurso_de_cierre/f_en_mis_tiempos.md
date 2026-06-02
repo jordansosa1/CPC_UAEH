@@ -1,3 +1,5 @@
+https://www.cpcjudge.com/problem/tiempos
+
 # F. En mis tiempos
 
 ## Descripción
@@ -60,7 +62,7 @@ En el segundo caso le tiran desde el segundo $2$ hasta el $6$, son $5$ segundos 
 En el tercer caso solo le tiran en el segundo $3$, le caen $7$ piedras y aguanta justo $7$, así que pasa.
 
 ## Temas identificados
-
+- 
 
 ## Propuesta de solución
 
@@ -75,5 +77,21 @@ En el tercer caso solo le tiran en el segundo $3$, le caen $7$ piedras y aguanta
 
 
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    int a, b, x, aguanta;
+    cin >> a >> b >> x >> aguanta;
+    if (((b - (a - 1)) * x) > aguanta) {
+        cout << "no aguanta nada jajaja";
+    } else {
+        cout << "pillory";
+    }
+
+    return 0;
+}
 ```
