@@ -62,15 +62,28 @@ En el segundo caso le tiran desde el segundo $2$ hasta el $6$, son $5$ segundos 
 En el tercer caso solo le tiran en el segundo $3$, le caen $7$ piedras y aguanta justo $7$, así que pasa.
 
 ## Temas identificados
-- 
+- Condicionales
 
 ## Propuesta de solución
+Para saber si aguanta debemos comparar los golpes que ha recibido durante una cantidad de segundos contra los golpes que puede aguantar. Para encontrar la cantidad de segundos que han pasado podemos hacer la operación:
 
+$últimoSegundo - (primerSegundo - 1)$,
+
+de forma que se incluya a ambos extremos en el resultado. Luego multiplicamos la cantidad de segundos por la cantidad de piedras que lanzan por segundo, el resultado hay que compararlo con la cantidad de daño que aguanta, si es mayor que lo que aguanta la solución es **"pillory"**, en caso contrario la solución es **"no aguanta nada jajaja"**.
 
 ## Implementación
 
 ```mermaid
+graph TD;
+    A([Inicio]) --> B[/Leer a, b, x, aguanta/];
+    B --> C["calcular resultado = (b - (a - 1)) * x"];
+    C --> D{¿resultado > aguanta?};
+    
+    D -- Sí --> E[\Imprimir "no aguanta nada jajaja"\];
+    D -- No --> F[\Imprimir "pillory"\];
 
+    E --> G([Fin]);
+    F --> G([Fin]);
 ```
 
 ### C++
@@ -82,8 +95,6 @@ En el tercer caso solo le tiran en el segundo $3$, le caen $7$ piedras y aguanta
 using namespace std;
 
 int main() {
-    cin.tie(0); ios::sync_with_stdio(false);
-
     int a, b, x, aguanta;
     cin >> a >> b >> x >> aguanta;
     if (((b - (a - 1)) * x) > aguanta) {
