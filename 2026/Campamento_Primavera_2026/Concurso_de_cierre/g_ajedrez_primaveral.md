@@ -1,3 +1,4 @@
+https://www.cpcjudge.com/problem/chesscarlosyangelica
 
 # G. Ajedrez Primaveral
 
