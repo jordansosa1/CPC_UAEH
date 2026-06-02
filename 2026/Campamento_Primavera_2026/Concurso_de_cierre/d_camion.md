@@ -62,11 +62,13 @@ Leer la entrada de metros recorridos y hacer la operación $46000-metrosRecorrid
 
 ```mermaid
 graph TD;
-    A([Inicio]) --> B{¿Hay errores?};
-    B -- Sí --> C[Corregir código];
-    C --> B;
-    B -- No --> D[Desplegar a Producción];
-    D --> E([Fin]);
+    A([Inicio]) --> B[/Leer metros recorridos/];
+    B --> C(46000 - metros recorridos)
+    C --> D{¿resultado menor de 4000?}
+    D -- Sí --> E[\Imprimir Ya merito\]
+    D -- No --> F[\Imprimir Zzz\]
+    E --> G([Fin]);
+    F --> G([Fin]);
 ```
 
 ### C++
