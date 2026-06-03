@@ -1,4 +1,3 @@
-
 https://www.cpcjudge.com/problem/comidaapuros
 
 # I. Comida en apuros
@@ -76,5 +75,66 @@ Un sólo número $T$ que indica el tamaño de la colonia en el momento dado.
 ### C++
 
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int main()
+{
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    long long int anteriorAnterior = 0;
+    long long int anterior = 1;
+    long long int actual = 1;
+
+    int segundo;
+    cin >> segundo;
+
+    for (int i = 0; i < segundo - 1; i++) {
+
+        anteriorAnterior = anterior;
+        anterior = actual;
+        actual = anteriorAnterior + anterior;
+    }
+
+    cout << actual;
+
+    return 0;
+}
+```
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+struct segundo
+{
+    long long int esporas;
+    long long int jovenes;
+    long long int maduras;
+};
+
+segundo s[100];
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+    
+    int n;
+    cin >> n;
+    s[0].jovenes++;
+
+    for (int i = 1; i <= n; i++) {
+        s[i].maduras = s[i - 1].maduras;
+        s[i].maduras += s[i - 1].jovenes;
+
+        s[i].jovenes += s[i - 1].esporas;
+        s[i].esporas += s[i].maduras;
+    }
+
+    long long int t = s[n - 1].esporas + s[n - 1].jovenes + s[n - 1].maduras;
+
+    cout << t;
+
+    return 0;
+}
 ```
