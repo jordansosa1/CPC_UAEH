@@ -73,5 +73,27 @@ Un entero $X$ la suma total del voltaje.
 ### C++
 
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int main()
+{
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    string s;
+    cin >> s;
+
+    int r = 0;
+
+    for (int i = 9, j = 0; i >= 0; i--, j++) {
+        if (s[i] == '1') {
+            r += pow(2, j);
+        }
+    }
+
+    cout << r;
+
+    return 0;
+}
 ```
