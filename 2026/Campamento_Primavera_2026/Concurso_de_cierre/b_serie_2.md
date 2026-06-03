@@ -63,5 +63,45 @@ En el caso de ejemplo, la única consulta da como resultado 19, puesto que las p
 
 
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int unos[35][200005];
+
+int main()
+{
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    int n, q;
+    cin >> n >> q;
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = 30; j >= 1; j--) {
+            char c;
+            cin >> c;
+
+            if (c == '1') {
+                unos[j][i] = unos[j][i - 1] + 1;
+            } else {
+                unos[j][i] = unos[j][i - 1];
+            }
+        }
+    }
+
+    for (int i = 0; i < q; i++) {
+        long long int voltajeTotal = 0;
+        int a, b;
+        cin >> a >> b;
+
+        for (int j = 1; j <= 30; j++) {
+            if ((unos[j][b] - unos[j][a - 1]) % 2 == 1) {
+                voltajeTotal += pow(2, j - 1);
+            }
+        }
+        cout << voltajeTotal << '\n';
+    }
+
+    return 0;
+}
 ```
