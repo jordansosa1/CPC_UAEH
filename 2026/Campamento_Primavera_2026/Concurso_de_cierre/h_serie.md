@@ -1,6 +1,6 @@
 https://www.cpcjudge.com/problem/serie
 
-# C. Dopamina
+# H. Serie
 
 ## Descripción
 *"Fue todo, ¿no es así?"*
