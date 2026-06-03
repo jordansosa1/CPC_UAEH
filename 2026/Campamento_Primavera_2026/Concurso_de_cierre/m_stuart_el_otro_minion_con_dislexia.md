@@ -97,5 +97,114 @@ ni mi libro ni mi silla
 ### C++
 
 ```cpp
+#include <iostream>
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+    
+    int num;
+    cin >> num;
+    cin.ignore();
+
+    for (int k = 0; k < num; k++) {
+        string frase;
+        getline(cin, frase);
+        frase.push_back(' ');
+        string resultado = "";
+        string palabra = "";
+
+        int n = 0, u = 0, b = 0, e = 0, q = 0, s = 0, o = 0, l = 0, i = 0, r = 0, m = 0, a = 0, p = 0, z = 0;
+
+        for (char c : frase) {
+            switch(c) {
+                case ' ':
+                    if (n == 1 && u == 1 && b == 1 && e == 1 && palabra.length() == 4) {
+                        palabra = "nube";
+                    }
+                    if (q == 1 && u == 1 && e == 1 && s == 1 && o == 1 && palabra.length() == 5) {
+                        palabra = "queso";
+                    }
+                    if (l == 1 && i == 1 && b == 1 && r == 1 && o == 1 && palabra.length() == 5) {
+                        palabra = "libro";
+                    }
+                    if (m == 1 && e == 1 && s == 1 && a == 1 && palabra.length() == 4) {
+                        palabra = "mesa";
+                    }
+                    if (l == 1 && a == 1 && p == 1 && i == 1 && z == 1 && palabra.length() == 5) {
+                        palabra = "lapiz";
+                    }
+                    resultado += palabra + " ";
+                    
+                    n = 0, u = 0, b = 0, e = 0, q = 0, s = 0, o = 0, l = 0, i = 0, r = 0, m = 0, a = 0, p = 0, z = 0;
+                    palabra = "";
+                    break;
+                case 'n':
+                    palabra.push_back(c);
+                    n++;
+                    break;
+                case 'u':
+                    palabra.push_back(c);
+                    u++;
+                    break;
+                case 'b':
+                    palabra.push_back(c);
+                    b++;
+                    break;
+                case 'e':
+                    palabra.push_back(c);
+                    e++;
+                    break;
+                case 'q':
+                    palabra.push_back(c);
+                    q++;
+                    break;
+                case 's':
+                    palabra.push_back(c);
+                    s++;
+                    break;
+                case 'o':
+                    palabra.push_back(c);
+                    o++;
+                    break;
+                case 'l':
+                    palabra.push_back(c);
+                    l++;
+                    break;
+                case 'i':
+                    palabra.push_back(c);
+                    i++;
+                    break;
+                case 'r':
+                    palabra.push_back(c);
+                    r++;
+                    break;
+                case 'm':
+                    palabra.push_back(c);
+                    m++;
+                    break;
+                case 'a':
+                    palabra.push_back(c);
+                    a++;
+                    break;
+                case 'p':
+                    palabra.push_back(c);
+                    p++;
+                    break;
+                case 'z':
+                    palabra.push_back(c);
+                    z++;
+                    break;
+                default:
+                    palabra.push_back(c);
+                    break;
+            }
+        }
+        cout << resultado << '\n';
+    }
+
+    return 0;
+}
 ```
