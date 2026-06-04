@@ -51,7 +51,7 @@ Zzz
 - En el tercer caso, quedan exactamente $4,000$ metros, por lo que todavía se puede dormir... aunque sea un metro más.
 
 ## Temas identificados
-
+### Programación
 - Condicionales
 
 ## Propuesta de solución
