@@ -89,7 +89,7 @@ $1+2+4+8$ $=$ $15$
 ## Implementación
 Lo primero será leer las entradas, para lo que necesitamos un arreglo bidimensional de tamaño $30 \times N$ de tipo *char*. Sabemos que nos van a pedir $Q$ tareas, cada una con un rango de circuitos en el que haremos un conteo vertical de $1's$.
 
-Si hacemos el conteo cada vez, contaremos intervalos repetidos, y en el peor de los casos habría $10^5$ circuitos, con $10^5$ tareas, y por cada tarea se recorre del circuito $1$ hasta el $10^5$, lo que da $10^15$ operaciones y ya se sale de tiempo por mucho.
+Si hacemos el conteo cada vez, contaremos intervalos repetidos, y en el peor de los casos habría $10^5$ circuitos, con $10^5$ tareas, y por cada tarea se recorre del circuito $1$ hasta el $10^5$, lo que da $10^{15}$ operaciones y ya se sale de tiempo por mucho.
 
 Una de las estrategias para optimizar el tiempo de las consultas es crear un **prefix**, que se refiere a crear un arreglo de frecuencias que nos diga cuántas veces aparece un $1$ según la posición consultada. Un prefix para el caso propuesto quedaría así:
 ```
