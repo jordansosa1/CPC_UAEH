@@ -36,6 +36,7 @@ Este repositorio fue desarrollado para:
 El repositorio está organizado en carpetas según el año, evento, concurso o temática correspondiente.
 
 
+![Imagen](Recursos/Imagen.png)
 
 Cada archivo Markdown puede incluir:
 
@@ -59,10 +60,7 @@ Cada archivo Markdown puede incluir:
         - Kotlin.
         - Python.
 
-
-Estructura:
-
-
+![Imagen](Recursos/Imagen.png)
 
 ## Lenguajes Utilizados
 
