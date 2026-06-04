@@ -58,21 +58,35 @@ Un sólo número $T$ que indica el tamaño de la colonia en el momento dado.
 ```
 
 ## Notas
-
 - En el primer ejemplo el resultado es $2$ debido a que en el primer segundo habia una hifa joven, en el siguiente segundo se convirtio en hifa madura y en el mismo segundo suelta una espora, por lo que el tamaño de la colonia es de $2$, la espora y la hifa madura.
 - En el segundo ejemplo el resultado es $3$ retomando el segundo $2$ del primer ejemplo, la espora se convierte en hifa joven, y la hifa madura suelta una espora, por lo que el tamaño de la colonia es de $3$, la hifa madura, la hifa joven y la nueva espora.
 
 ## Temas identificados
+### Matemáticas
+- Sucesiones numéricas
 
+### Programación
+- Ciclos
 
 ## Propuesta de solución
+Se pueden tomar dos estrategias para resolver el problema, debido a que los límites no son grandes, sino que $N$ solo llega hasta $90$, se puede resolver haciendo un simulación tal y como se describe en la descripción, cumpliendo por cada segundo con las reglas establecidas; o se pueden hacer casos de prueba de la siguiente forma:
 
+| segundo | espora | hifa joven | hifa madura | población |
+| :-----: | :----: | :--------: | :---------: | :-------: |
+| 1       | 0      | 1          | 0           | 1         |
+| 2       | 1      | 0          | 1           | 2         |
+| 3       | 1      | 1          | 1           | 3         |
+| 4       | 2      | 1          | 2           | 5         |
+| 5       | 3      | 2          | 3           | 8         |
+| 6       | 5      | 3          | 5           | 13        |
 
-```mermaid
+Y observar que la población sigue un patrón regular, la sucesión de Fibonacci, donde el siguiente número es la suma de los dos números anteriores.
 
-```
+## Implementación
+Para ambas estrategias, basta con usar tres variables, y ya sea siguiendo las reglas de la descripción o la regla de Fibonacci se puede llegar a la solución iterando hasta $N$.
 
 ### C++
+Es importante tener en cuenta los límites para el tipo de variable que se va a usar, al sumar números cada vez más grandes, existe el riesgo de que se desborden las variables, por lo que se usa **long long** para poder almacenar números de hasta $10^{19}$.
 
 ```cpp
 #include <bits/stdc++.h>
@@ -81,8 +95,6 @@ using namespace std;
 
 int main()
 {
-    cin.tie(0); ios::sync_with_stdio(false);
-
     long long int anteriorAnterior = 0;
     long long int anterior = 1;
     long long int actual = 1;
@@ -91,7 +103,6 @@ int main()
     cin >> segundo;
 
     for (int i = 0; i < segundo - 1; i++) {
-
         anteriorAnterior = anterior;
         anterior = actual;
         actual = anteriorAnterior + anterior;
@@ -102,6 +113,7 @@ int main()
     return 0;
 }
 ```
+
 ```cpp
 #include <bits/stdc++.h>
 
