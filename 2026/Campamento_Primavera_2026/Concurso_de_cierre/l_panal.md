@@ -1,4 +1,4 @@
-https://www.cpcjudge.com/problem/dopa
+https://www.cpcjudge.com/problem/panal
 
 # C. Dopamina
 
