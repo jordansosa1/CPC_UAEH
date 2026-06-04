@@ -264,6 +264,8 @@ Y con eso, comenzó una nueva historia.
 
 Fin.
 
+![Imagen](Recursos/a_minions.png)
+
 ## Aclaración
 - Este texto es un resumen de la película "Los Minions", se usa con fines académicos y sin ánimos de lucro. Todos los derechos del argumento pertenecen a Illumination Entertainment.
 
