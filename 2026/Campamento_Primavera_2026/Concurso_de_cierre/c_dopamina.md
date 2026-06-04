@@ -64,11 +64,13 @@ Imprime un solo entero, la cantidad de piedritas que le sobran a Maullín despu�
 - En el tercero hay $14$ gatos en total y a cada uno le toca exactamente $1$ piedrita.
 
 ## Temas identificados
+### Matemáticas
+- Módulo
 
+### Programación
 - Ciclos
 - Condicionales
 - Acumuladores
-- Módulo
 
 ## Propuesta de solución
 
