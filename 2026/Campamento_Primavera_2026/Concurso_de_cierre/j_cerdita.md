@@ -60,7 +60,7 @@ Imprime un único número entero correspondiente al resultado de $C^E$.
 - En el tercer ejemplo, al haber $0$ exposiciones, no se ha hecho ninguna reproducción, por lo que lógicamente solo existe la obra original de Melisa $(7^0 = 1)$.
 
 ## Temas identificados
-
+### Matemáticas
 - Potencias
 - Leyes de exponentes
 
