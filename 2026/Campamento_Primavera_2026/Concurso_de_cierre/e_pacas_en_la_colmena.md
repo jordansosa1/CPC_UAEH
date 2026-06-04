@@ -1,6 +1,6 @@
 https://www.cpcjudge.com/problem/pacascolmena
 
-# C. Pacas en la colmena
+# E. Pacas en la colmena
 
 ## Descripción
 
