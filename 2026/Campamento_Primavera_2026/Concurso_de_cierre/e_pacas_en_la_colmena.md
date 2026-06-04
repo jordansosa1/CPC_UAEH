@@ -4,7 +4,7 @@ https://www.cpcjudge.com/problem/pacascolmena
 
 ## Descripción
 
-Últimamente Honey ha notado que en su colmena hay un gran desorden de recursos, especialmente hay un gran desorden en la bodega donde hay unidades de ***cera*** y ***propóleo***, dos de los principales materiales de construcción de las abejas obreras, la organización de las abejas las ha llevado a formar una fila de materiales conforme fueron llegando a la bodega, sin embargo Honey ha concluido que una forma más conveniente de guardar estos recursos es colocándolos en pacas y a su vez.
+Últimamente Honey ha notado que en su colmena hay un gran desorden de recursos, especialmente hay un gran desorden en la bodega donde hay unidades de ***cera*** y ***propóleo***, dos de los principales materiales de construcción de las abejas obreras, la organización de las abejas las ha llevado a formar una fila de materiales conforme fueron llegando a la bodega, sin embargo Honey ha concluido que una forma más conveniente de guardar estos recursos es colocándolos en pacas a su vez.
 
 Cada paca debe tener exactamente dos unidades de algún recurso, para lograr llevar un control sobre el almacenamiento Honey decidió que cada paca debe tener un sólo tipo de material guardado y para hacer más rápido el proceso de guardado ha planeado que un grupo de abejas le ayude a completar esta labor.
 
