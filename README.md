@@ -58,11 +58,10 @@ Cada archivo Markdown puede incluir:
 ## Lenguajes Utilizados
 
 Las soluciones documentadas pueden encontrarse en distintos lenguajes de programación, incluyendo:
-
-* C++
-* Java
-* Kotlin
-* Python
+- C++
+- Java
+- Kotlin
+- Python
 
 ## Uso
 
@@ -71,10 +70,10 @@ Los documentos están escritos en formato Markdown (`.md`) y pueden consultarse 
 
 Cuando una solución incluye código fuente, este puede copiarse y ejecutarse en el entorno correspondiente:
 
-* IDEs para C++
-* IDEs para Java
-* IDEs para Kotlin
-* IDEs para Python
+- IDEs para C++
+- IDEs para Java
+- IDEs para Kotlin
+- IDEs para Python
 
 La forma de compilación o ejecución dependerá del lenguaje utilizado en cada problema.
 
@@ -92,8 +91,9 @@ Al agregar documentación nueva se recomienda:
 
 ## Participantes
 
-* [@gomae19](https://github.com/gomae19)
-* [@jordansosa1](https://github.com/jordansosa1)
+- [@gomae19](https://github.com/gomae19)
+- [@jordansosa1](https://github.com/jordansosa1)
+- [@edcrvl](https://github.com/edcrvl)
 
 ## Sobre el Club
 
