@@ -96,7 +96,7 @@ Una de las estrategias para optimizar el tiempo de las consultas es crear un **p
 111111111111111111111111111111
 222222222222222222222222221111
 ```
-Así podemos hacer las consultas en el rango $a[i][b] - a[i][a - 1]$, donde $i$ representa una de las 30 posiciones de la cadena, así podemos saber cuántos $1's$ hay en el intervalo $[a, b]$ según la columna en la que encuentre; logramos que cualquier consulta, sin importar la longitud del rango, se haga en complejidad O(1) en vez de O(N).
+Así podemos hacer las consultas en el rango $arr[i][b] - arr[i][a - 1]$, donde $i$ representa una de las 30 posiciones de la cadena, así podemos saber cuántos $1's$ hay en el intervalo $[a, b]$ según la columna en la que encuentre; logramos que cualquier consulta, sin importar la longitud del rango, se haga en complejidad O(1) en vez de O(N).
 
 Si dentro del rango dado, hay una cantidad impar de $1's$, se puede calcular con el módulo de 2, en caso de ser impar, tomamos la posición en la que se encuentra, hacemos la potencia $2^i$ y lo sumamos en una varible, que va acumulando el total de voltaje.
 
