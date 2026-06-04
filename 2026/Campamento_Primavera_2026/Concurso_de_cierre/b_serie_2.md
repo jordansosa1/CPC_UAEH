@@ -47,19 +47,67 @@ $Q$ enteros, el voltaje que tendrá el bus de sincronización en cada prueba.
 En el caso de ejemplo, la única consulta da como resultado 19, puesto que las posiciones $30$, $29$ y $26$ reciben una cantidad de $3$, $3$ y $1$ señales respectivamente, siendo las únicas impares, dando como resultado $1V + 2V + 16V = 19V$.
 
 ## Temas identificados
+### Matemáticas
+- Módulo
+- Potencias
+- Sistemas numéricos
 
+### Programación
+- Ciclos
+- Condicionales
+- Arreglos
+- Suma de acumulados
+- Prefix
 
 ## Propuesta de solución
+Dada una matriz de dimensiones $30 \times N$, donde cada fila $N$ se compone por $0's$ y $1's$, lo primero que pensaríamos sería en la cantidad de bits encendidos por cada cadena, pero hay 3 frases importantes en la descripción:
+- Felipe conecta varios circuitos a un bus de sincronización.
+- múltiples señales pueden llegar simultáneamente a la misma posición.
+- Si una posición recibe una cantidad impar de señales, el bus encenderá el módulo de esta posición.
 
+Pondré un caso simple:
 
-## Implementación
-
-```mermaid
-
+Entrada
+```
+2 1
+111111111111111111111111111111
+111111111111111111111111110000
+1 2
 ```
 
-### C++
+Salida
+```
+15
+```
 
+El bus de sincronización se refiere a que, si bien los circuitos son horizontales, al **sincronizar** se miden todos a la vez, por lo que es un corte vertical. En este ejemplo, contando los $1's$ por cada columna, es fácil notar que en la posición $0$, $1$, $2$, $3$ (de derecha a izquierda) hay una cantidad impar de $1's$, mientras que en el resto de posiciones hay una cantidad par de $1's$. La regla impuesta es que si una posición recibe una cantidad impar de $1's$, se considerará esa posición en el cálculo de voltaje total.
+
+Hay que sumar $2^i$, donde la cantidad de $1's$ de la columna en la posición $i$ debe ser impar. Lo que en este pequeño caso se traduce a:
+
+$1+2+4+8$ $=$ $15$
+
+## Implementación
+Lo primero será leer las entradas, para lo que necesitamos un arreglo bidimensional de tamaño $30 \times N$ de tipo *char*. Sabemos que nos van a pedir $Q$ tareas, cada una con un rango de circuitos en el que haremos un conteo vertical de $1's$.
+
+Si hacemos el conteo cada vez, contaremos intervalos repetidos, y en el peor de los casos habría $10^5$ circuitos, con $10^5$ tareas, y por cada tarea se recorre del circuito $1$ hasta el $10^5$, lo que da $10^15$ operaciones y ya se sale de tiempo por mucho.
+
+Una de las estrategias para optimizar el tiempo de las consultas es crear un **prefix**, que se refiere a crear un arreglo de frecuencias que nos diga cuántas veces aparece un $1$ según la posición consultada. Un prefix para el caso propuesto quedaría así:
+```
+111111111111111111111111111111
+222222222222222222222222221111
+```
+Así podemos hacer las consultas en el rango $a[i][b] - a[i][a - 1]$, donde $i$ representa una de las 30 posiciones de la cadena, así podemos saber cuántos $1's$ hay en el intervalo $[a, b]$ según la columna en la que encuentre; logramos que cualquier consulta, sin importar la longitud del rango, se haga en complejidad O(1) en vez de O(N).
+
+Si dentro del rango dado, hay una cantidad impar de $1's$, se puede calcular con el módulo de 2, en caso de ser impar, tomamos la posición en la que se encuentra, hacemos la potencia $2^i$ y lo sumamos en una varible, que va acumulando el total de voltaje.
+
+### C++
+Hay que tener cuidado con los límites del problema, porque son $2 \times 10^5$ y si tomamos el primer índice como $1$, debemos tener posiciones extra para evitar errores de acceso de memoria.
+
+Para poder tener un bloque de entradas y un bloque de salidas, se usan las líneas:
+```
+cin.tie(0);
+ios::sync_with_stdio(false);
+```
 
 
 ```cpp
