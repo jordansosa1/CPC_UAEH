@@ -38,7 +38,7 @@ $T$ enteros $X$ módulo $10^9 + 7$, el número de formas posibles para construir
 
 En el primer caso, estas son todas las posibles formas de construir el panal de altura $2$:
 
-!(/Recursos/L_Panal.png)
+![](/Recursos/L_Panal.png)
 
 
 
