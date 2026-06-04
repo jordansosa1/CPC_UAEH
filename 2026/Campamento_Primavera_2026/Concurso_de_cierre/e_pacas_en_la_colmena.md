@@ -76,7 +76,7 @@ Para $1$: { $0, 1, 2, 2, 2, 3, 3, 4, 4, 4$ }
 
 Para $2$: { $1, 1, 1, 2, 3, 3, 4, 4, 5, 6$ }
 
-Si no se hacen estos arreglo, el algoritmo no entra en tiempo y será rechazado, siendo que son $10^6$ cantidad de tareas y en el peor de los casos, por cada tarea recorreriamos $10^6$ posiciones del arreglo, daría $10^{12}$ operaciones y tardaría demasiado.
+Si no se hacen estos arreglos, el algoritmo no entra en tiempo y será rechazado, siendo que son $10^6$ cantidad de tareas y en el peor de los casos, por cada tarea recorreriamos $10^6$ posiciones del arreglo, daría $10^{12}$ operaciones y tardaría demasiado.
 
 Pero, de esta forma podemos entrar en tiempo al no recorrer todo el arreglo inicial por cada tarea posterior, y solo hacer la operación $x[R] - x[L - 1]$, donde obtenemos, para ambos arreglos, la cantidad total de material que hay hasta la posición $R$ y le restamos la cantidad de material que había hasta antes de la posición $L$, así solo nos quedamos con la cantidad de material que hay desde la posición $L$ hasta $R$.
 
