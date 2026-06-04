@@ -58,6 +58,10 @@ En el primer caso:
 - En la tercera prueba se consideró la secuencia {1, 2} por lo que no se armó ninguna paca al no poder completar alguna.
 
 ## Temas identificados
+### Matemáticas
+Intervalos
+
+### Programación
 - Arreglos
 - Prefix
 - Ciclos
