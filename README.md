@@ -35,6 +35,7 @@ Este repositorio fue desarrollado para:
 
 El repositorio está organizado en carpetas según el año, evento, concurso o temática correspondiente.
 
+![Imagen](Recursos/Imagen1.png)
 
 ![Imagen](Recursos/Imagen.png)
 
