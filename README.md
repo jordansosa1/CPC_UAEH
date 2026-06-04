@@ -61,8 +61,6 @@ Cada archivo Markdown puede incluir:
         - Kotlin.
         - Python.
 
-![Imagen](Recursos/Imagen.png)
-
 ## Lenguajes Utilizados
 
 Las soluciones documentadas pueden encontrarse en distintos lenguajes de programación, incluyendo:
@@ -75,7 +73,6 @@ Las soluciones documentadas pueden encontrarse en distintos lenguajes de program
 ## Uso
 
 Este repositorio no corresponde a una aplicación ejecutable.
-
 Los documentos están escritos en formato Markdown (`.md`) y pueden consultarse directamente desde GitHub o mediante cualquier visor compatible con Markdown.
 
 Cuando una solución incluye código fuente, este puede copiarse y ejecutarse en el entorno correspondiente:
@@ -97,7 +94,7 @@ Al agregar documentación nueva se recomienda:
 2. Justificar el algoritmo utilizado.
 3. Incluir análisis de complejidad cuando sea relevante.
 4. Mantener un formato consistente con el resto del repositorio.
-5. Verificar que el código incluido sea correcto y legible.
+5. Verificar que el código incluido sea correcto, legible y validado por el juez virtual de cpcjudge.
 
 ## Participantes
 
@@ -112,5 +109,5 @@ Este repositorio forma parte del esfuerzo del club por documentar y compartir co
 
 ## Licencia
 
-Salvo que se indique lo contrario, el contenido de este repositorio tiene fines educativos y académicos.
+Salvo que se indique lo contrario, el contenido de este repositorio tiene fines educativos y académicos, sin ánimos de lucro.
 
