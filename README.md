@@ -8,6 +8,8 @@ Sigan las recomendaciones de este sitio:
 
 Repositorio oficial de documentación del **Club de Programación Competitiva (CPC)** de la **Universidad Autónoma del Estado de Hidalgo (UAEH)**.
 
+![Imagen](Recursos/logoCPC.png)
+
 ## Descripción
 
 CPC_UAEH es una colección de documentación técnica sobre problemas de programación competitiva. Cada documento describe el análisis, razonamiento y solución de un problema específico, incluyendo implementaciones de referencia cuando es necesario.
