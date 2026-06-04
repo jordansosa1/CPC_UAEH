@@ -62,6 +62,7 @@ En el segundo caso le tiran desde el segundo $2$ hasta el $6$, son $5$ segundos 
 En el tercer caso solo le tiran en el segundo $3$, le caen $7$ piedras y aguanta justo $7$, así que pasa.
 
 ## Temas identificados
+### Programación
 - Condicionales
 
 ## Propuesta de solución
