@@ -52,25 +52,30 @@ Un entero $X$ la suma total del voltaje.
 ```
 
 ## Notas
-
 - En el primer caso, el voltaje del último módulo es de $1V$ el penúltimo, entonces, otorga $2 * 1V = 2V$, siendo la suma final de $3V$.
 - En el tercer caso, la suma de todos los voltajes son $512 + 256 + 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 1023$ siendo la suma del último al primer módulo.
 
 ## Temas identificados
+### Matemáticas
+- Sistemas numéricos
+- Potencias
+
+### Programación
+- Ciclos
+- Condicionales
 
 ## Propuesta de solución
-
-
+Si los números empiezan a duplicarse de derecha a izquierda empezando en $1$, es un clásico conversor de binario a decimal. 
 
 ## Implementación
-
-
-
-```mermaid
-
-```
+Comenzando desde $0$ de derecha a izquierda, si el contenido de la cadena en una posición $i$ es igual a $1$, entonces sumamos el resultado de elevar $2^i$ a un total. 
 
 ### C++
+El total puede ser una variable int donde se acumule el resultado de la operación de potencia se puede hacer con la función **pow()** que está contenida en la librería **cmath**, contenida a su vez en la librería **bits/stdc++.h**, dando como parámetros $2$ e $i$:
+
+```cpp
+pow(2, i);
+```
 
 ```cpp
 #include <bits/stdc++.h>
@@ -79,20 +84,18 @@ using namespace std;
 
 int main()
 {
-    cin.tie(0); ios::sync_with_stdio(false);
-
     string s;
     cin >> s;
 
-    int r = 0;
+    int total = 0;
 
     for (int i = 9, j = 0; i >= 0; i--, j++) {
         if (s[i] == '1') {
-            r += pow(2, j);
+            total += pow(2, j);
         }
     }
 
-    cout << r;
+    cout << total;
 
     return 0;
 }
