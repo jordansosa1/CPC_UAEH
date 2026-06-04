@@ -8,7 +8,7 @@ Sigan las recomendaciones de este sitio:
 
 Repositorio oficial de documentación del **Club de Programación Competitiva (CPC)** de la **Universidad Autónoma del Estado de Hidalgo (UAEH)**.
 
-## 📖 Descripción
+## Descripción
 
 CPC_UAEH es una colección de documentación técnica sobre problemas de programación competitiva. Cada documento describe el análisis, razonamiento y solución de un problema específico, incluyendo implementaciones de referencia cuando es necesario.
 
@@ -16,7 +16,7 @@ El objetivo principal de este repositorio es preservar el conocimiento generado 
 
 La programación competitiva suele involucrar problemas cuya solución no es evidente de manera intuitiva. Muchas veces, comprender el enfoque correcto requiere conocer algoritmos, estructuras de datos o técnicas específicas. Este repositorio busca reducir esa barrera proporcionando explicaciones accesibles y documentadas.
 
-## 🎯 Motivación
+## Motivación
 
 A medida que los miembros del club adquieren experiencia resolviendo problemas, se genera una gran cantidad de conocimiento técnico que puede perderse con el tiempo.
 
@@ -28,35 +28,28 @@ Este repositorio fue desarrollado para:
 * Evitar la dependencia de una sola persona para explicar una solución.
 * Crear una base de conocimiento reutilizable para futuras generaciones del CPC.
 
-## 📂 Contenido
+## Contenido
 
 El repositorio está organizado en carpetas según el año, evento, concurso o temática correspondiente.
 
 Cada archivo Markdown puede incluir:
 
-* Enunciado o contexto del problema.
-* Análisis de la solución.
-* Explicación de algoritmos utilizados.
-* Consideraciones de complejidad temporal y espacial.
-* Código de referencia.
-* Observaciones y notas adicionales.
+- Descripción del ploblema.
+- Entrada.
+- Salida.
+- Ejemplos. 
+- Notas.
+- Temas identificados.
+- Propuesta de solución.
+- Implementación
+- Código.
 
-Ejemplo de estructura:
 
-```text
-CPC_UAEH/
-│
-├── 2026/
-│   ├── Campamento_Primavera_2026/
-│   │   ├── Concurso_de_cierre/
-│   │   ├── README.md
-│   │   └── ...
-│   └── ...
-│
-└── README.md
-```
+Estructura:
 
-## 💻 Lenguajes Utilizados
+
+
+## Lenguajes Utilizados
 
 Las soluciones documentadas pueden encontrarse en distintos lenguajes de programación, incluyendo:
 
@@ -65,7 +58,7 @@ Las soluciones documentadas pueden encontrarse en distintos lenguajes de program
 * Kotlin
 * Python
 
-## 🚀 Uso
+## Uso
 
 Este repositorio no corresponde a una aplicación ejecutable.
 
@@ -80,7 +73,7 @@ Cuando una solución incluye código fuente, este puede copiarse y ejecutarse en
 
 La forma de compilación o ejecución dependerá del lenguaje utilizado en cada problema.
 
-## 🤝 Contribuciones
+## Contribuciones
 
 Las contribuciones de miembros del CPC son bienvenidas.
 
@@ -92,18 +85,18 @@ Al agregar documentación nueva se recomienda:
 4. Mantener un formato consistente con el resto del repositorio.
 5. Verificar que el código incluido sea correcto y legible.
 
-## 👥 Participantes
+## Participantes
 
 * [@gomae19](https://github.com/gomae19)
 * [@jordansosa1](https://github.com/jordansosa1)
 
-## 📚 Sobre el Club
+## Sobre el Club
 
 El Club de Programación Competitiva (CPC) de la Universidad Autónoma del Estado de Hidalgo es una comunidad dedicada al estudio de algoritmos, estructuras de datos y resolución de problemas de programación competitiva.
 
 Este repositorio forma parte del esfuerzo del club por documentar y compartir conocimiento entre sus integrantes.
 
-## 📄 Licencia
+## Licencia
 
 Salvo que se indique lo contrario, el contenido de este repositorio tiene fines educativos y académicos.
 
