@@ -85,12 +85,14 @@ ni mi libro ni mi silla
 ```
 
 ## Temas identificados
+### Programación
 - Ciclos
 - Manejo de cadenas
 - Condicionales
+- Vector
 
 ## Propuesta de solución
-
+En este problema, el diccionario de palabras que pueden escribirse mal son muy pocas, .................
 
 ## Implementación
 
