@@ -59,7 +59,7 @@ En el primer caso:
 
 ## Temas identificados
 ### Matemáticas
-Intervalos
+- Intervalos
 
 ### Programación
 - Arreglos
