@@ -62,7 +62,7 @@ En el caso de ejemplo, la única consulta da como resultado 19, puesto que las p
 ## Propuesta de solución
 Dada una matriz de dimensiones $30 \times N$, donde cada fila $N$ se compone por $0's$ y $1's$, lo primero que pensaríamos sería en la cantidad de bits encendidos por cada cadena, pero hay 3 frases importantes en la descripción:
 - Felipe conecta varios circuitos a un bus de sincronización.
-- múltiples señales pueden llegar simultáneamente a la misma posición.
+- Múltiples señales pueden llegar simultáneamente a la misma posición.
 - Si una posición recibe una cantidad impar de señales, el bus encenderá el módulo de esta posición.
 
 Pondré un caso simple:
