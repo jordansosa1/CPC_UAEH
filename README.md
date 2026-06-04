@@ -7,6 +7,7 @@ Sigan las recomendaciones de este sitio:
 # CPC_UAEH
 
 Repositorio oficial de documentación del **Club de Programación Competitiva (CPC)** de la **Universidad Autónoma del Estado de Hidalgo (UAEH)**.
+https://cpcjudge.com/
 
 ![Imagen](Recursos/logoCPC.png)
 
@@ -34,17 +35,29 @@ Este repositorio fue desarrollado para:
 
 El repositorio está organizado en carpetas según el año, evento, concurso o temática correspondiente.
 
+
+
 Cada archivo Markdown puede incluir:
 
+- Link al problema en la página.
 - Descripción del ploblema.
-- Entrada.
-- Salida.
-- Ejemplos. 
+- Entradas.
+- Salidas.
+- Ejemplos.
+    - Entradas.
+    - Salidas.
 - Notas.
 - Temas identificados.
+    -Programación.
+    -Matematicas.
 - Propuesta de solución.
-- Implementación
-- Código.
+- Implementación.
+    - Diagrama de flujo
+    - Codigo.
+        - C++.
+        - Java.
+        - Kotlin.
+        - Python.
 
 
 Estructura:
