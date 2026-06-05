@@ -42,7 +42,19 @@ https://www.cpcjudge.com/problem/
 
 
 ```cpp
+#include <iostream>
 
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    if (t < 8) {
+        cout << "dios nos ha abandonado";
+    } else {
+        cout << "todo bien, un paste de papa y se me quita";
+    }
+}
 ```
 
 ### Java
