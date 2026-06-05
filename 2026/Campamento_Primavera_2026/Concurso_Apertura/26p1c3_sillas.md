@@ -56,10 +56,10 @@ Por cada fila, imprimir un único entero: la **mínima** cantidad de personas qu
 ```
 
 ## Notas
-Para la primera fila, el único acomodo válido es $010$ porque ya no permite que se sienten más personas. El acomodo $101$ tampoco permite que se sienten más personas, sin embargo, no es la cantidad mínima. Por lo tanto, la respuesta es $1$.
+Para la primera fila, el único acomodo válido es **$010$** porque ya no permite que se sienten más personas. El acomodo **$101$** tampoco permite que se sienten más personas, sin embargo, no es la cantidad mínima. Por lo tanto, la respuesta es **$1$**.
 
-Para la segunda fila, un acomodo válido es $0101$. Se puede demostrar que no existe un acomodo con menos personas, por lo que la respuesta es $2$.
-Para la cuarta fila, no existe lugar disponible, por lo que la respuesta es $4$.
+Para la segunda fila, un acomodo válido es **$0101$**. Se puede demostrar que no existe un acomodo con menos personas, por lo que la respuesta es **$2$**.
+Para la cuarta fila, no existe lugar disponible, por lo que la respuesta es **$4$**.
 
 ## Temas identificados
 ### Matemáticas
