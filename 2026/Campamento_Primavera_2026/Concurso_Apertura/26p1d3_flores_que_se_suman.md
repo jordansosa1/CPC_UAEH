@@ -50,9 +50,7 @@ int main()
 {
     int a, b;
     cin >> a >> b;
-
-    int f = 2*(a + b);
-    cout << f;
+    cout << 2 * (a + b);
 
     return 0;
 }
