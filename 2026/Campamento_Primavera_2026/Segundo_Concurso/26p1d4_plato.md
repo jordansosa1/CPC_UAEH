@@ -58,5 +58,16 @@ En el primer caso Coco terminó en 1 segundo después de que el juez activara el
 
 
 ```cpp
+#include <bits/stdc++.h>
+#include <iomanip>
 
+using namespace std;
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    double a, b;
+    cin >> a >> b;
+    cout << fixed << setprecision(2) << b - a;
+}
 ```
