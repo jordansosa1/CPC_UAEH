@@ -42,7 +42,15 @@ https://www.cpcjudge.com/problem/
 
 
 ```cpp
+#include <iostream>
 
+using namespace std;
+
+int main() {
+    cout << "hola mundo";
+    
+    return 0;
+}
 ```
 
 ### Java
