@@ -102,5 +102,45 @@ Dadas las restricciones de la salida, la rana debe robar en la tercera columna.
 
 
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int a[1000000];
+
+int main()
+{
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    int n, m;
+    cin >> n >> m;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= m; j++) {
+            char c;
+            cin >> c;
+            if (c == 'T') {
+                a[j]++;
+            }
+        }
+    }
+
+    int c = 1;
+    int mayor = 0;
+    for (int i = 1; i <= m; i++) {
+        //cout << "valor: " << a[i] << '\n';
+        if (a[i] > mayor) {
+            mayor = a[i];
+            //cout << mayor << '\n';
+            c = i;
+        }
+    }
+
+    if (mayor == 0) {
+        cout << "Bro...";
+    } else {
+        cout << c << " " << mayor;
+    }
+
+    return 0;
+}
 ```
