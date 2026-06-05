@@ -6,7 +6,7 @@ https://www.cpcjudge.com/problem/sillas
 Al momento de organizar un evento masivo, un aspecto crucial es acomodar los asientos de las personas. Para ello, los organizadores crearon una regla que debe cumplirse sin excepción:
 
 - No se puede sentar a ninguna persona junto a otra.
-- 
+
 Esto se debe a que las personas son tan platicadoras que terminan arruinando por completo el evento, quitándole todo el sentido.
 
 Inicialmente, los organizadores habían distribuido invitaciones considerando cierta capacidad. Sin embargo, debido a un recorte presupuestal inesperado, ahora necesitan **reducir la cantidad total de asistentes**.
