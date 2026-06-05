@@ -95,6 +95,7 @@ graph TD;
     C -- Sí --> D[/Leer gatos/]
     D --> E(Sumar gatos a totalGatos)
     E --> F(i++)
+    F --> C
     C -- No --> G{piedritas es menor que totalGatos}
     G -- Sí --> H[\Imprimir 0\]
     G -- No --> I[\Imprimir piedritas % totalGatos\]
