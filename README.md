@@ -77,6 +77,8 @@ Cuando una solución incluye código fuente, este puede copiarse y ejecutarse en
 
 La forma de compilación o ejecución dependerá del lenguaje utilizado en cada problema.
 
+La entrada y salida de datos están preparadas para el juez virtual.
+
 ## Contribuciones
 
 Las contribuciones de miembros del CPC son bienvenidas.
