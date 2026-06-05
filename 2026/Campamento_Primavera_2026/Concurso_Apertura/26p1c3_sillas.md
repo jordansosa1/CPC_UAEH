@@ -25,8 +25,8 @@ Para cada $i$-$ésima$ fila:
 Un entero $N_i$ $(1 \leq N_i \leq 2 \cdot 10^5)$, la cantidad de sillas en la $i$-$ésima$ fila.
 En la siguiente línea una cadena $C_i$ $(1 \leq |C_i| \leq 2 \cdot 10^5)$, donde:
 
-- $**0**$ representa un lugar disponible.
-- $**1**$representa un lugar ya ocupado.
+- $0$ representa un lugar disponible.
+- $1$representa un lugar ya ocupado.
 
 Se garantiza que la suma total de sillas no excede $2 \cdot 10^5$ y que no existe ningún par consecutivo de sillas ocupadas; es decir, ningún par rompe la regla mencionada.
 
