@@ -117,7 +117,7 @@ int main() {
     for (int i = 0; i < 7; i++) {
         int gatos;
         cin >> gatos;
-        total += gatos;
+        totalGatos += gatos;
     }
 
     if (piedritas < totalGatos) {
