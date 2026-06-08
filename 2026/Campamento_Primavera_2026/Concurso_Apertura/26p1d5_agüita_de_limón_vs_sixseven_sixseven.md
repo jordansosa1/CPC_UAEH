@@ -104,7 +104,7 @@ int main()
 {
     int n;
     int x;
-    int s = 0;
+    int sum = 0;
     cin >> n >> x;
 
     for (int i = 0; i < n; i++){
@@ -112,12 +112,12 @@ int main()
         cin >> aux;
 
         if (aux % 6 == 0 || aux % 7 == 0) {
-        } else {
-            s = s + aux;
 
+        } else {
+            sum = sum + aux;
         }
     }
-    cout << s * x;
+    cout << sum * x;
     return 0;
 }
 
