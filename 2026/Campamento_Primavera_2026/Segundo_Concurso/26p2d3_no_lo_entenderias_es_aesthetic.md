@@ -69,5 +69,22 @@ FLOOOOOOOOOOR
 
 
 ```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    string s = "FL";
+    int e;
+    cin >> e;
+
+    for (int i = 0; i < e; i++){
+        s += "O";
+    }
+    cout << s << "R";
+
+    return 0;
+}
 
 ```
