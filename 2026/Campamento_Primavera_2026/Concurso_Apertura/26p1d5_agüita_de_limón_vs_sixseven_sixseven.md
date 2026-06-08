@@ -96,29 +96,8 @@ Tu ganancia total.
 
 
 ```cpp
-#include <bits/stdc++.h>
 
-using namespace std;
 
-int main() {
-    cin.tie(0);
-    ios::sync_with_stdio(false);
-	
-	int n, x;
-	cin >> n >> x;
-	int a[n]; 
-	for (int i = 0; i < n; i++) {
-	    cin >> a[i];
-	}
-	int total = 0;
-	for (int i = 0; i < n; i++) {
-	    if (a[i] % 6 == 0 || a[i] % 7 == 0) {
-	    } else {
-	        total += a[i] * x;
-	    }
-	}
-	cout << total;
-}
 ```
 
 ### Java
