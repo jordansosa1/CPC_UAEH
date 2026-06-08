@@ -1,6 +1,6 @@
 https://www.cpcjudge.com/problem/panal
 
-# C. Dopamina
+# L. Panal
 
 ## Descripción
 
