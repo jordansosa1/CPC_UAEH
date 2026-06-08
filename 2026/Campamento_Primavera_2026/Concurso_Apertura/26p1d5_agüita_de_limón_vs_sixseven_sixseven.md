@@ -96,7 +96,30 @@ Tu ganancia total.
 
 
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int main()
+{
+    int n;
+    int x;
+    int s = 0;
+    cin >> n >> x;
+
+    for (int i = 0; i < n; i++){
+        int aux;
+        cin >> aux;
+
+        if (aux % 6 == 0 || aux % 7 == 0) {
+        } else {
+            s = s + aux;
+
+        }
+    }
+    cout << s * x;
+    return 0;
+}
 
 ```
 
