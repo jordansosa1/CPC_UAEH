@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/
 
 # Título
+### Autor
 
 ## Descripción
 
