@@ -72,16 +72,14 @@ int main()
 {
     cin.tie(0); ios::sync_with_stdio(false);
 
-    int n;
-    cin >> n;
-    for (int i = 0; i < n; i++) {
-        int x;
-        cin >> x;
-        int q;
-        cin >> q;
+    int casos;
+    cin >> casos;
+    for (int i = 0; i < casos; i++) {
+        int semillas, segundos;
+        cin >> semillas >> segundos;
 
-        if (q % 2 == 1) {
-            cout << x << '\n';
+        if (segundos % 2 == 1) {
+            cout << semillas << '\n';
         } else {
             cout << 0 << '\n';
         }
