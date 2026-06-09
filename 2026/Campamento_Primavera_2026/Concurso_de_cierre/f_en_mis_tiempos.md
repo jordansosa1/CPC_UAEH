@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/tiempos
 
 # F. En mis tiempos
+### Autor: Ignacio_benq
 
 ## Descripción
 Maullín ya andaba haciendo amigos, cuando un gato le contó muy emocionado que un humano llamado Euler había resuelto un acertijo famoso sobre estos puentes. Maullín no tenía idea de quién era ese Euler ni de qué acertijo le hablaban. Los demás gatos al verlo se ofendieron y empezaron a aventarle piedras brillantes desde los puentes.
