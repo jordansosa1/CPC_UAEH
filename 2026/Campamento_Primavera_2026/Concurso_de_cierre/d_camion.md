@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/camion
 
 # D. Camión
+### Autor: Soria
 
 ## Descripción
 *"Para acordarme de mí, yo me necesito ahí"*
