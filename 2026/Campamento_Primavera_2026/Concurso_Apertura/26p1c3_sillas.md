@@ -78,7 +78,34 @@ Para la cuarta fila, no existe lugar disponible, por lo que la respuesta es **4*
 
 
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int main() {
+   cin.tie(0); ios::sync_with_stdio(false);
+
+	int q;
+	cin >> q;
+	for (int i = 0; i < q; i++) {
+	    int n;
+	    cin >> n;
+	    string s;
+	    cin >> s;
+       s = '0' + s + '0';
+	    int t = 0, ceros = 0;
+	    for (int i = 0; i < n + 2; i++) {
+            if (s[i] == '0') {
+                ceros++;
+            }
+            if (s[i] == '1' || ceros == 3) {
+                t++;
+                ceros = 0;
+            }
+	    }
+	    cout << t << '\n';
+	}
+}
 ```
 
 ### Java
