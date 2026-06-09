@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/stuartminiondislexia
 
 # M. Stuart, el otro minion con dislexia
+### Autor: wisperfrog
 
 ## Descripción
 Stuart, el hermano de Bob, empezó a ir a la misma escuela que él y aprendió a escribir textos en español. Como le dejaban la misma tarea que Bob, debía hacer varios textos sobre la primavera.
