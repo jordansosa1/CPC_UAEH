@@ -14,7 +14,7 @@ Si esa suma es par, deja el tablero y se va a sus pendientes. Si es impar juega 
 Es decir si la suma de todos los enteros en el rango $[a, b]$ (incluyendo ambos extremos) es **par** o **impar**.
 
 ## Entrada
-Una línea con dos enteros $a$ y $b$  $(1 \leq a \leq b \leq 10^{18})$, el segundo en el que Benito empezó a jugar y el segundo actual.
+Una línea con dos enteros $a$ y $b$  $(1 \leq a \leq b \leq 10^{9})$, el segundo en el que Benito empezó a jugar y el segundo actual.
 
 ## Salida
 Imprime ```ya estuvo``` si la suma del rango es par, o ```otro ratito``` si es impar.
@@ -61,5 +61,23 @@ En el segundo la suma es \(2 + 3 + 4 = 9\), impar. Le toca seguir moviendo pieza
 
 
 ```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    cin.tie(0); ios::sync_with_stdio(false);
+    long long int l, r;
+    cin >> l >> r;
+    long long int s = (r * (r + 1)) / 2 - ((l - 1) * (l)) / 2;
+
+    if (s % 2 == 0)
+        cout << "ya estuvo";
+    else
+        cout << "otro ratito";
+
+    return 0;
+}
 
 ```
