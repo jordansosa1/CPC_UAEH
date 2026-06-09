@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/minionslapelicula
 
 # A. Minions, la película
+### Autor: wisperfrog
 
 ## Descripción
 Desde el inicio de la vida en la Tierra, mucho antes de los humanos, existían unas pequeñas criaturas amarillas con un único propósito en la vida: servir al villano más malvado que pudieran encontrar.
