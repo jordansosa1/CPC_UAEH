@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/serie
 
 # H. Serie
+### Autor: Soria
 
 ## Descripción
 *"Fue todo, ¿no es así?"*
