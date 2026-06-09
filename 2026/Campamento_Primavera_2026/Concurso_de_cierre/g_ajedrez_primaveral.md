@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/chesscarlosyangelica
 
 # G. Ajedrez Primaveral
+### Autor: Kaarlarax
 
 ## Descripción
 Durante las cálidas tardes de primavera, Carlos y Angélica aprovechan el clima soleado para disfrutar su tiempo de ocio al aire libre. Después de pasar horas estudiando programación y algoritmos, deciden darle un descanso a sus mentes y relajarse bajo un árbol florecido jugando al ajedrez. Inspirados por la frescura de la temporada, deciden inventar un nuevo reto basado en un problema clásico.
