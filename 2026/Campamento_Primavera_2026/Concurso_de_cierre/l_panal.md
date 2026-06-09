@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/panal
 
 # L. Panal
+### Autor: Soria
 
 ## Descripción
 
