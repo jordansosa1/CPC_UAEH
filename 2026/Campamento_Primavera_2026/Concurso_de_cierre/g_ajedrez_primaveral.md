@@ -50,5 +50,35 @@ k 8 8
 
 
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+
+  	int q;
+  	cin >> q;
+  
+  	for (int i = 0; i < q; i++) {
+        char pieza;
+        int n, m;
+        cin >> pieza >> n >> m;
+
+        switch(pieza) {
+            case 'r':
+                cout << min(n, m) << '\n';
+                break;
+            case 'Q':
+                cout << min(n, m) << '\n';
+                break;
+            case 'K':
+                cout << ((n + 1) / 2) * ((m + 1) / 2) << '\n';
+                break;
+            case 'k':
+                cout << ((n * m) + 1) / 2 << '\n';
+                break;
+        }
+  	}
+}
 ```
