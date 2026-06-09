@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/dopa
 
 # C. Dopamina
+Autor: Ignacio_benq
 
 ## Descripción
 
