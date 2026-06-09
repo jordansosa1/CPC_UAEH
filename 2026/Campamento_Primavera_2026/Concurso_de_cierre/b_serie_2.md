@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/serie2
 
 # B. Serie 2
+### Autor: Soria
 
 ## Descripción
 *"¿No es así? Eso fue todo"*
