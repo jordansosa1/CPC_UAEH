@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/cerdita
 
 # J. cerdita
+### Autor: xenredda
 
 ## Descripción
 
