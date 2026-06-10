@@ -271,6 +271,8 @@ Fin.
 - Este texto es un resumen de la película "Los Minions", se usa con fines académicos y sin ánimos de lucro. Todos los derechos del argumento pertenecen a Illumination Entertainment.
 
 ## Propuesta de solución
+### Autor: Jordan
+
 Si no hay entradas ni salidas, es seguro que algo hay que imprimir y está descrito en el texto, al realizar lectura rápida buscando palabras clave como **respuesta**, **salida**, **imprimir**, *etc*, podemos encontrar la línea que dice:
 
 **La salida correcta de este problema es *"Odio a los minions"***
