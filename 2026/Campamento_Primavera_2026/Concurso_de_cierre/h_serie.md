@@ -66,6 +66,8 @@ Un entero $X$ la suma total del voltaje.
 - Condicionales
 
 ## Propuesta de solución
+### Autor: Jordan
+
 Si los números empiezan a duplicarse de derecha a izquierda empezando en $1$, es un clásico conversor de binario a decimal. 
 
 ## Implementación
