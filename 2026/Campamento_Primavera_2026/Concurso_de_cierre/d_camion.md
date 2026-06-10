@@ -56,6 +56,7 @@ Zzz
 - Condicionales
 
 ## Propuesta de solución
+### Autor: Jordan
 
 Según la descripción el viaje siempre tiene $46$ kilómetros sin importar la entrada, así que podemos restar a $46000$ el número de entrada, pues se expresa en metros, el resultado de la resta debe ser estrictamente menor que $4000$ decir **"Ya merito"**, en caso contrario será **"Zzz"**
 
