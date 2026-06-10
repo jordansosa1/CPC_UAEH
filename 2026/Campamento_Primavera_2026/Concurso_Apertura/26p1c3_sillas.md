@@ -20,7 +20,7 @@ Cabe mencionar que cada fila se analiza de manera independiente.
 
 ## Entrada
 En la primera línea un entero $F$ $(1 \leq F \leq 10^4)$, indicando el número de filas de sillas en el evento.
-Para cada $i$-$ésima$ fila:
+Para cada $i$ - $ésima$ fila:
 
 Un entero $N_i$ $(1 \leq N_i \leq 2 \cdot 10^5)$, la cantidad de sillas en la $i$ - $ésima$ fila.
 En la siguiente línea una cadena $C_i$ $(1 \leq |C_i| \leq 2 \cdot 10^5)$, donde:
