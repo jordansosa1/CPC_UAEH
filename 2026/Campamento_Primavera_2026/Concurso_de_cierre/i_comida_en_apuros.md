@@ -70,6 +70,8 @@ Un sólo número $T$ que indica el tamaño de la colonia en el momento dado.
 - Ciclos
 
 ## Propuesta de solución
+### Autor: Jordan
+
 Se pueden tomar dos estrategias para resolver el problema, debido a que los límites no son grandes, sino que $N$ solo llega hasta $90$, se puede resolver haciendo un simulación tal y como se describe en la descripción, cumpliendo por cada segundo con las reglas establecidas; o se pueden hacer casos de prueba de la siguiente forma:
 
 | segundo | espora | hifa joven | hifa madura | población |
