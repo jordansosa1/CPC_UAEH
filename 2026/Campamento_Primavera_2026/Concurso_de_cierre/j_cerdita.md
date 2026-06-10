@@ -66,6 +66,7 @@ Imprime un único número entero correspondiente al resultado de $C^E$.
 - Leyes de exponentes
 
 ## Propuesta de solución
+### Autor: Jordan
 
 En la descripción se especifica que la entrada es $C$ $E$, también se menciona la expresión $C^E$, y al revisar los **Ejemplos** se puede ver que la solucion será elevar $C$ a la $E$ potencia.
 
