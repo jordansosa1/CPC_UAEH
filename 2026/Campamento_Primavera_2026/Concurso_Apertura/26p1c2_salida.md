@@ -13,7 +13,7 @@ En las siguientes $N$ lineas una cadena $A_i$, el texto de la $i$ - $ésima$ pue
 Se garantiza que la suma de los tamaños de todas las cadenas no supera $10^3$ y que una sola cadena tiene el texto *"SALIDA"*.
   
 ## Salida
-Un entero $i$, indicando que $i$-$ésima$ puerta es la de la salida.
+Un entero $i$, indicando que $i$ - $ésima$ puerta es la de la salida.
 
 ## Ejemplo
 
