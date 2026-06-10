@@ -93,6 +93,8 @@ ni mi libro ni mi silla
 - Vector
 
 ## Propuesta de solución
+### Autor: Jordan
+
 En este problema, el diccionario de palabras que pueden escribirse mal son muy pocas, .................
 
 ## Implementación
