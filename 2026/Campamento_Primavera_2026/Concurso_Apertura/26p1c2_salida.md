@@ -9,7 +9,7 @@ Debido al clima de la primavera, Felipe se encuentra en medio la inundación de 
 
 ## Entrada
 Un entero $N$ $(1 \leq N \leq 1000)$ representando el número de puertas que hay.
-En las siguientes $N$ lineas una cadena $A_i$, el texto de la $i$-$ésima$ puerta.
+En las siguientes $N$ lineas una cadena $A_i$, el texto de la $i$ - $ésima$ puerta.
 Se garantiza que la suma de los tamaños de todas las cadenas no supera $10^3$ y que una sola cadena tiene el texto *"SALIDA"*.
   
 ## Salida
