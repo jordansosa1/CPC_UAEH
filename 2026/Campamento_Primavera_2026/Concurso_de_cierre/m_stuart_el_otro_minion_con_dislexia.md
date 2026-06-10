@@ -29,7 +29,7 @@ Stuart tampoco ha aprendido a escribir letras mayúsculas ni acentos, entonces *
 ## Entrada
 En la primera línea un entero $N$ $(1 \leq N \leq 100)$, la cantidad de líneas del texto de Stuart.
 
-En las siguientes $N$ líneas una cadena $C_i$ $(1 \leq |C_i| \leq 100)$, la $i$-$ésima$ línea del texto registrada.
+En las siguientes $N$ líneas una cadena $C_i$ $(1 \leq |C_i| \leq 100)$, la $i$ - $ésima$ línea del texto registrada.
 
 Se garantiza que las cadenas no inician ni terminan con espacios. Las palabras de una cadena están separadas por espacios.
 
