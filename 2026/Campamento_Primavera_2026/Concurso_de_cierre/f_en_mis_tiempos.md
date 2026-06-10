@@ -67,6 +67,8 @@ En el tercer caso solo le tiran en el segundo $3$, le caen $7$ piedras y aguanta
 - Condicionales
 
 ## Propuesta de solución
+### Autor: Jordan
+
 Para saber si aguanta debemos comparar los golpes que ha recibido durante una cantidad de segundos contra los golpes que puede aguantar. Para encontrar la cantidad de segundos que han pasado podemos hacer la operación:
 
 $últimoSegundo - (primerSegundo - 1)$,
