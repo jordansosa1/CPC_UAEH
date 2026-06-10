@@ -35,10 +35,71 @@ k 8 8
 ```
 
 ## Temas identificados
+### Matemáticas
+- Adhoc
 
+### Programación
+- Ciclos
+- Condicionales
 
 ## Propuesta de solución
+Solo se piden 4 piezas distintas, por cada una de las piezas se puede hacer una simulación con el tablero dado o se pueden aplicar fórmulas para calcular la cantidad de piezas que caben en el tablero dado. Para explicar las fórmulas encontradas, voy a poner un ejemplo con un tablero de $5 \times 6$, con la solución para todas las piezas y con las fórumlas preparadas para trabajar con variables enteras:
 
+- Para torres ```r```:
+
+```
+r . . . .
+. r . . .
+. . r . .
+. . . r .
+. . . . r
+. . . . .
+```
+Observamos que para maximizar el número de piezas lo mejor es colocarlas en diagonal desde un borde hasta el otro, por lo que la diagonal va a ser tan grande como el lado más corto.
+
+La fórmula encontrada es $\min${ $n,m$ }.
+
+- Para reinas ```Q```:
+
+```
+. . . Q .
+Q . . . .
+. . Q . .
+. . . . Q
+. Q . . .
+. . . . .
+```
+Observamos que las reinas tienen un acomodo parecido a los movimientos de un caballo, pero si hacemos casos, no daremos cuenta que pueden caber tantas reinas como torres, debido a su naturaleza ortogonal, por lo que de igual forma, caben tantas reinas como el lado más corto.
+
+La fórmula encontrada es $\min${ $n,m$ }.
+
+- Para reyes ```K```:
+
+```
+K . K . K
+. . . . .
+K . K . K
+. . . . .
+K . K . K
+. . . . .
+```
+Observamos que los reyes se acomodan en una cuadrícula, pues cada uno puede atacar a sus 8 casillas adyacentes, se puede dejar solo un espacio entre cada uno, por lo que caben tantos reyes como la mitad del lado $n$, multiplicado por la mitad del lado $m$, pero hay que notar que si el lado es par, la división es correcta, pero si el lado es impar, el resultado de la división se desvía por 0.5 de la cantidad real,  por lo que hay que sumar una unidad a $m$ y a $n$, para luego dividir y redondear hacia abajo.
+
+La fórmula encontrada es $\left(\frac{n+1}{2}\right)\left(\frac{m+1}{2}\right)$.
+
+- Para caballos ```k```:
+
+```
+k . k . k
+. k . k .
+k . k . k
+. k . k .
+k . k . k
+. k . k .
+```
+Observamos que los caballos siempre atacan a una casilla del color contrario al que están, por lo que podemos acomodar caballos en todas las casillas de un solo color sin que se ataquen, cabrán tantos coaballos como la cantidad de casillas dividido entre $2$, p
+
+La fórmula encontrada es $\frac{n \cdot m + 1}{2}$.
 
 ## Implementación
 
