@@ -43,6 +43,8 @@ k 8 8
 - Condicionales
 
 ## Propuesta de solución
+### Autor: Jordan
+
 Solo se piden 4 piezas distintas, por cada una de las piezas se puede hacer una simulación con el tablero dado o se pueden aplicar fórmulas para calcular la cantidad de piezas que caben en el tablero dado. Para explicar las posiciones de las piezas, voy a poner un ejemplo con un tablero de $5 \times 6$, con la solución para todas las piezas:
 
 - Para torres ```r```:
