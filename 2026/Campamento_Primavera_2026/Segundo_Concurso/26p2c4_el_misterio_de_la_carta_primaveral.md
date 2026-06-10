@@ -66,5 +66,24 @@ AC KC QC JC TC 9C 8C 7C 6C 5C 4C 3C 2C AD KD QD JD TD 9D 8D 7D 6D 5D 4D 3D 2D AH
 
 
 ```cpp
+#include <bits/stdc++.h>
 
+using namespace std;
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+
+	int q;
+	cin >> q;
+
+	for (int i = 0; i < q; i++) {
+        for (int i = 1; i <= 52; i++) {
+            string carta;
+            cin >> carta;
+            if (i == 33) {
+                cout << carta << '\n';
+            }
+        }
+	}
+}
 ```
