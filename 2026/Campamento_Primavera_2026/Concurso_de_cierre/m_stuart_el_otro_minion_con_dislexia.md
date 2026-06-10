@@ -213,3 +213,83 @@ int main() {
     return 0;
 }
 ```
+
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int abc[30];
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+
+	int q;
+	cin >> q;
+    cin.ignore();
+
+	for (int i = 0; i < q; i++) {
+        string frase;
+        getline(cin, frase);
+
+        frase.push_back(' ');
+
+        fill(begin(abc), end(abc), 0);
+
+        string palabra = "";
+        string resultado = "";
+
+        for (auto c : frase) {
+            if (c == ' ') {
+                if (abc['n' - 'a'] == 1 &&
+                    abc['u' - 'a'] == 1 &&
+                    abc['b' - 'a'] == 1 &&
+                    abc['e' - 'a'] == 1 &&
+                    palabra.length() == 4) {
+                    palabra = "nube";
+                }
+                if (abc['q' - 'a'] == 1 &&
+                    abc['u' - 'a'] == 1 &&
+                    abc['e' - 'a'] == 1 &&
+                    abc['s' - 'a'] == 1 &&
+                    abc['o' - 'a'] == 1 &&
+                    palabra.length() == 5) {
+                    palabra = "queso";
+                }
+                if (abc['l' - 'a'] == 1 &&
+                    abc['i' - 'a'] == 1 &&
+                    abc['b' - 'a'] == 1 &&
+                    abc['r' - 'a'] == 1 &&
+                    abc['o' - 'a'] == 1 &&
+                    palabra.length() == 5) {
+                    palabra = "libro";
+                }
+                if (abc['m' - 'a'] == 1 &&
+                    abc['e' - 'a'] == 1 &&
+                    abc['s' - 'a'] == 1 &&
+                    abc['a' - 'a'] == 1 &&
+                    palabra.length() == 4) {
+                    palabra = "mesa";
+                }
+                if (abc['l' - 'a'] == 1 &&
+                    abc['a' - 'a'] == 1 &&
+                    abc['p' - 'a'] == 1 &&
+                    abc['i' - 'a'] == 1 &&
+                    abc['z' - 'a'] == 1 &&
+                    palabra.length() == 5) {
+                    palabra = "lapiz";
+                }
+                resultado += palabra + " ";
+
+                fill(begin(abc), end(abc), 0);
+                palabra = "";
+            } else {
+                abc[c - 'a']++;
+                palabra.push_back(c);
+            }
+        }
+        cout << resultado << '\n';
+	}
+}
+
+```
