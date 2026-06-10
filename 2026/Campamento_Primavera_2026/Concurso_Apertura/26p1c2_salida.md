@@ -62,6 +62,27 @@ En el segundo caso, existe una única puerta, la cuál es la salida.
 
 
 ```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    int n;
+    string s;
+
+    cin >> n;
+
+    for (int i = 1; i <= n; i++){
+        cin >> s;
+        if (s == "SALIDA"){
+            cout << i;
+        }
+    }
+    return 0;
+}
 
 ```
 
