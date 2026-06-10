@@ -87,3 +87,43 @@ int main() {
 	}
 }
 ```
+
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+
+	int q;
+	cin >> q;
+
+	for (int i = 0; i < q; i++) {
+        int y = 0;
+        vector<string> mazo;
+        for (int j = 1; j <= 27; j++) {
+            string s;
+            cin >> s;
+            mazo.push_back(s);
+        }
+        for (int j = 0; j < 3; j++) {
+            int num = mazo.back()[0] == 'A' ||
+                           mazo.back()[0] == 'J' ||
+                           mazo.back()[0] == 'K' ||
+                           mazo.back()[0] == 'Q' ||
+                           mazo.back()[0] == 'T'? 10 : mazo.back()[0] - '0';
+            for (int k = 1; k <= 11 - num; k++) {
+                mazo.pop_back();
+            }
+            y += num;
+        }
+        for (int j = 1; j <= 25; j++) {
+            string s;
+            cin >> s;
+            mazo.push_back(s);
+        }
+        cout << y << " " << mazo[y - 1] << '\n';
+	}
+}
+```
