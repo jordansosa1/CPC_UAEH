@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/carlosysandroprimave
 
 # 26P2C4. El Misterio de la Carta Primaveral
+### Autor: Kaarlarax
 
 ## Descripción
 Durante las cálidas tardes de primavera, Sandro y Carlos aprovechan el clima para entrenar al aire libre. Sus días comienzan con horas de algoritmos y código, por lo que pronto terminan exhaustos. Para darle un descanso a sus mentes y disfrutar de la brisa primaveral bajo los árboles, les gusta jugar a las cartas en sus ratos libres.
@@ -46,9 +47,6 @@ AC KC QC JC TC 9C 8C 7C 6C 5C 4C 3C 2C AD KD QD JD TD 9D 8D 7D 6D 5D 4D 3D 2D AH
 8H
 ```
 
-## Notas
-
-
 ## Temas identificados
 ### Matemáticas
 - Simplificación
@@ -62,35 +60,48 @@ AC KC QC JC TC 9C 8C 7C 6C 5C 4C 3C 2C AD KD QD JD TD 9D 8D 7D 6D 5D 4D 3D 2D AH
 - Estructuras de datos
 
 ## Propuesta de solución
+### Autor: Jordan
 
+Se pueden tomar dos estrategias, la primera, más difícil de programar pero más fácil de entender es seguir los pasos de la descripción, debido a que por caso son $52$ cartas siempre, y solo se llega hasta 1000 casos, hacer una simulación entra en tiempo perfectamente.
+
+La segunda estrategia requiere identificar y desarrollar algebraicamente la abstracción matemática del problema como se describe a continuación:
+
+- Primero se toman las 52 cartas, y se retiran las 25 cartas superiores, por lo que haremos nuestro proceso con las primeras 27 cartas, donde la primera que entró es la que se encuentra abajo en el mazo.
+- Se toma la carta superior y se lee el número, si es $A$, $T$, $Q$, $K$, $J$, equivale a $10$, y se le denomina $x_i$. Este paso se hace $3$ veces, por lo que al final de la operación tenemos $x_1$, $x_2$ y $x_3$.
+- El proceso requiere sumar los tres números obtenidos en una variable $Y$ que comienza con valor $0$. Al final de este proceso, $Y$ equivale a ($x_1 + x_2 + x_3$).
+- Este mismo proceso requiere que por cada iteración se haga la operación ($10 - x_i$), y el resultado es la cantidad de cartas que vamos a descartar de la parte superior del mazo, además de descartar la carta consultada.
+
+En resumen, hasta este punto ya podemos hacer el desarrollo con las expresiones encontradas que son:
+
+- El índice del mazo que vamos a consultar después de añadir las 25 cartas que habiamos apartado: $Y=x_1+x_2+x_3$
+- La cantidad de cartas que se descartaron durante el proceso: ${[(10-x_1)+1]+[(10-x_2)+1]+[(10-x_3)+1]}$
+
+Podemos simplificar la cantidad de cartas descartadas a ${(11-x_1)+(11-x_2)+(11-x_3)}$, luego a ${33-(x_1+x_2+x_3)}$, donde observamos que es posible sustituir la variable $Y$ en la cantidad de cartas descartadas, de la siguiente forma:
+
+$33-Y$
+
+Ahora, sabemos que tenemos un mazo de $27$ cartas de donde vamos a descartar $33-Y$ cartas, y se puede representar como:
+
+${27-(33-Y)=Y-6}$
+
+Donde ahora sabemos que el índice a consultar después de descartar $33-Y$ cartas está en la posición $Y-6$, por lo tanto, tras añadir las 25 cartas que habiamos apartado, el índice que queremos imprimir será $Y$ tras haber restado la cantidad de cartas descartadas, que es $Y-6$.
+
+${Y-(Y-6)=6}$
+
+Por lo que ahora sabemos que la posición $6$ del mazo de 25 cartas es la solución al problema, así que de un total de 52 cartas, el índice que nos da la respuesta es $27+6=33$.
+
+Finalmente vemos que, la posición 33 de cualquier caso nos da la solución correcta.
 
 ## Implementación
+Para la simulación, se requiere usar varios ciclos for, pero al ser solo 52 cartas, y solo 1000 tareas, además de que las operaciones son finitas, incluso los ciclos anidados tres veces no suponen un riesgo de rendimiento. La idea es que para evitar hacer acciones repetitivas, solamente se lean las primeras 27 cadenas, se haga el proceso, se acumulen las $x_i$ en una variable $Y$, luego se lean el resto de cadenas en frente de la lista ya procesada, y se imprima finalmente el índice $Y$.
 
+Para el desarrollo algebraico solo hay que imprmir la posición $33$.
 
 ### C++
-
-
+Para mantener un bloque claro de entradas y un bloque de salidas, se utilizan las siguientes instrucciones, que pausan la salida hasta que se hacen todas las entradas:
 ```cpp
-#include <bits/stdc++.h>
-
-using namespace std;
-
-int main() {
-    cin.tie(0); ios::sync_with_stdio(false);
-
-	int q;
-	cin >> q;
-
-	for (int i = 0; i < q; i++) {
-        for (int i = 1; i <= 52; i++) {
-            string carta;
-            cin >> carta;
-            if (i == 33) {
-                cout << carta << '\n';
-            }
-        }
-	}
-}
+cin.tie(0);
+ios::sync_with_stdio(false);
 ```
 
 ```cpp
@@ -129,6 +140,29 @@ int main() {
             mazo.push_back(s);
         }
         cout << mazo[y - 1] << '\n';
+	}
+}
+```
+
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(false);
+
+	int q;
+	cin >> q;
+
+	for (int i = 0; i < q; i++) {
+        for (int i = 1; i <= 52; i++) {
+            string carta;
+            cin >> carta;
+            if (i == 33) {
+                cout << carta << '\n';
+            }
+        }
 	}
 }
 ```
