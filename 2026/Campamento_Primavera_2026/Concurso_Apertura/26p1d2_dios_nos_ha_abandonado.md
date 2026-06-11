@@ -17,7 +17,7 @@ Imprime exactamente una línea con el mensaje correspondiente:
 - Si $T &lt; 8$, imprime: "dios nos ha abandonado"
 - Si $T \ge 8$, imprime: "todo bien, un paste de papa y se me quita"
 
-![Imagen](Recursos/IDA.jpeg)
+![Imagen](Recursos/IDA.png)
 
 ## Ejemplo
 
