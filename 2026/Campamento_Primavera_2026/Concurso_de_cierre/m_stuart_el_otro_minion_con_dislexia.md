@@ -112,6 +112,12 @@ Al terminar con la frase la imprimimos.
 ### C++
 En este lenguaje, las variable char son interpretados como números, por lo que un char se puede usar como posición de un arreglo, esa característica puede ser usada para registrar qué letras y cuáles aparecen en la palabra
 
+Para poder tener un bloque de entradas y un bloque de salidas, se usan las líneas:
+```cpp
+cin.tie(0);
+ios::sync_with_stdio(false);
+```
+
 ```cpp
 #include <iostream>
 #include <bits/stdc++.h>
