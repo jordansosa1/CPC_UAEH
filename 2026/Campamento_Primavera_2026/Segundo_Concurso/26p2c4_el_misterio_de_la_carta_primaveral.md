@@ -51,10 +51,15 @@ AC KC QC JC TC 9C 8C 7C 6C 5C 4C 3C 2C AD KD QD JD TD 9D 8D 7D 6D 5D 4D 3D 2D AH
 
 ## Temas identificados
 ### Matemáticas
-- 
+- Simplificación
+- Sustitución
+- Álgebra
+- Adhoc
 
 ### Programación
-- 
+- Ciclos
+- Condicionales
+- Estructuras de datos
 
 ## Propuesta de solución
 
