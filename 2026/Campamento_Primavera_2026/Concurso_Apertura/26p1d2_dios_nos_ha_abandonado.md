@@ -18,6 +18,7 @@ Imprime exactamente una línea con el mensaje correspondiente:
 - Si $T \ge 8$, imprime: "todo bien, un paste de papa y se me quita"
 
 ![Imagen](Recursos/IDA.png)
+*Fotografía tomada durante un soleado día primaveral en IDA (8 grados).*
 
 ## Ejemplo
 
