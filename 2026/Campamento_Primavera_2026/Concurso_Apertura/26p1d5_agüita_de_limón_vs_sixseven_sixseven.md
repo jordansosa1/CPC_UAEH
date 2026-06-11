@@ -1,4 +1,4 @@
-https://www.cpcjudge.com/problem/
+https://www.cpcjudge.com/problem/aguitadelimonvs67
 
 # 26P1D5. Agüita de limón vs sixseven sixseven
 
