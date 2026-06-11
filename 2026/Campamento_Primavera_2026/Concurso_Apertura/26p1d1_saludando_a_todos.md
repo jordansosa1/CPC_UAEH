@@ -25,11 +25,9 @@ La salida que genere tu código debe ser exactamente igual a la salida que descr
 
 
 ## Temas identificados
-### Matemáticas
-- 
 
 ### Programación
-- 
+- Flujo de salida
 
 ## Propuesta de solución
 
