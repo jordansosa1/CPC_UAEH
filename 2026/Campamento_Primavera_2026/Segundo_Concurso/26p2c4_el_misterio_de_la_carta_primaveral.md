@@ -123,7 +123,7 @@ int main() {
             cin >> s;
             mazo.push_back(s);
         }
-        cout << y << " " << mazo[y - 1] << '\n';
+        cout << mazo[y - 1] << '\n';
 	}
 }
 ```
