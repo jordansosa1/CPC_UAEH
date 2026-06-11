@@ -104,6 +104,7 @@ cin.tie(0);
 ios::sync_with_stdio(false);
 ```
 
+Estrategia de la simulación:
 ```cpp
 #include <bits/stdc++.h>
 
@@ -144,6 +145,7 @@ int main() {
 }
 ```
 
+Estrategia de desarrollo algebraico:
 ```cpp
 #include <bits/stdc++.h>
 
