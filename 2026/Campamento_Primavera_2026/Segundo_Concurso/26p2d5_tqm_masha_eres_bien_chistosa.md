@@ -41,21 +41,24 @@ Para cada caso, imprimir la cantidad de semillas que recogió Masha.
 
 ## Notas
 En el primer caso, ocurre lo siguiente:
-- Segundo \(1\): Masha recoge \(2\) semillas, lleva \(2\)
-- Segundo \(2\): Masha cabecea y tira \(2\) semillas, lleva \(0\)
-- Segundo \(3\): Masha recoge \(2\) semillas, lleva \(2\)
+- Segundo $1$: Masha recoge $2$ semillas, lleva $2$
+- Segundo $2$: Masha cabecea y tira $2$ semillas, lleva $0$
+- Segundo $3$: Masha recoge $2$ semillas, lleva $2$
 
-Masha recogió \(2\) semillas en total.
+Masha recogió $2$ semillas en total.
 
 ## Temas identificados
 ### Matemáticas
-- 
+- Módulo
 
 ### Programación
-- 
+- Ciclos
+- Condicionales
 
 ## Propuesta de solución
+### Autor: Jordan
 
+Este es un clásico problema de "lo que te describimos, eso no es", porque realmente, no nos importa lo que pasa en cada segundo, podemos saber 
 
 ## Implementación
 
