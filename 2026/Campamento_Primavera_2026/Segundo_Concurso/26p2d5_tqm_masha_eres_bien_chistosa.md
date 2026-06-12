@@ -1,6 +1,7 @@
 https://www.cpcjudge.com/problem/masha
 
 # 26P2D5. Tqm Masha, eres bien chistosa
+#### Autor: wisperfrog
 
 ## Descripción
 Oso tuvo una visión. Él cree que si planta demasiados árboles, cuando estos crezcan, albergarán muchos panales de abejas y así tendrá miel casi infinita. Así entonces, Oso fue a la ciudad y compró muchísimas semillas de árbol. Llegó a casa y cuando estaba por entrar resbaló con uno de los juguetes de Masha y las semillas estaban regadas por todas partes.
@@ -56,7 +57,7 @@ Masha recogió $2$ semillas en total.
 - Condicionales
 
 ## Propuesta de solución
-### Autor: Jordan
+#### Autor: Jordan
 
 Este es un clásico problema de "lo que te describimos, eso no es", porque realmente, no nos importa lo que pasa en cada segundo, porque cada operación se cancela con la siguiente, como se menciona en la descripción, la respuesta oscila entre $0$ y $x$. Solo hay que notar que en los segundos impares lleva $x$ semillas, y en los segundos pares lleva $0$ semillas.
 
