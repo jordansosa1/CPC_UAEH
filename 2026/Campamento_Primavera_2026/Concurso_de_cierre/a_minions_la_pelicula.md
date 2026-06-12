@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/minionslapelicula
 
 # A. Minions, la película
-### Autor: wisperfrog
+#### Autor: wisperfrog
 
 ## Descripción
 Desde el inicio de la vida en la Tierra, mucho antes de los humanos, existían unas pequeñas criaturas amarillas con un único propósito en la vida: servir al villano más malvado que pudieran encontrar.
@@ -271,7 +271,7 @@ Fin.
 - Este texto es un resumen de la película "Los Minions", se usa con fines académicos y sin ánimos de lucro. Todos los derechos del argumento pertenecen a Illumination Entertainment.
 
 ## Propuesta de solución
-### Autor: Jordan
+#### Autor: Jordan
 
 Si no hay entradas ni salidas, es seguro que algo hay que imprimir y está descrito en el texto, al realizar lectura rápida buscando palabras clave como **respuesta**, **salida**, **imprimir**, *etc*, podemos encontrar la línea que dice:
 
@@ -282,6 +282,8 @@ Si no hay entradas ni salidas, es seguro que algo hay que imprimir y está descr
 Imprimir en consola ***"Odio a los minions"***.
 
 ### C++
+
+#### Autor: Jordan
 ```cpp
 #include <bits/stdc++.h>
 
