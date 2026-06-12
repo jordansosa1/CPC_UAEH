@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/dopa
 
 # C. Dopamina
-Autor: Ignacio_benq
+#### Autor: Ignacio_benq
 
 ## Descripción
 
@@ -74,7 +74,7 @@ Imprime un solo entero, la cantidad de piedritas que le sobran a Maullín despu�
 - Acumuladores
 
 ## Propuesta de solución
-### Autor: Jordan
+#### Autor: Jordan
 
 Al leer la descripción se puede entender que las piedritas se van a repartir entre todos los gatos independientemente de en que puente se encuentren, por lo que es innecesario mantener a los gatos como un arreglo de puentes, y se vuelve más conveniente tener la cantidad total de gatos en un solo dato.
 
@@ -107,6 +107,7 @@ graph TD;
 
 ### C++
 
+#### Autor: Jordan
 ```cpp
 #include <bits/stdc++.h>
 
