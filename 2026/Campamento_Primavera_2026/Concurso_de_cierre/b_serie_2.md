@@ -1,7 +1,7 @@
 https://www.cpcjudge.com/problem/serie2
 
 # B. Serie 2
-### Autor: Soria
+#### Autor: Soria
 
 ## Descripción
 *"¿No es así? Eso fue todo"*
@@ -61,7 +61,7 @@ En el caso de ejemplo, la única consulta da como resultado 19, puesto que las p
 - Prefix
 
 ## Propuesta de solución
-### Autor: Jordan
+#### Autor: Jordan
 
 Dada una matriz de dimensiones $30 \times N$, donde cada fila $N$ se compone por $0's$ y $1's$, lo primero que pensaríamos sería en la cantidad de bits encendidos por cada cadena, pero hay 3 frases importantes en la descripción:
 - Felipe conecta varios circuitos a un bus de sincronización.
@@ -112,7 +112,7 @@ cin.tie(0);
 ios::sync_with_stdio(false);
 ```
 
-
+#### Autor: Jordan
 ```cpp
 #include <bits/stdc++.h>
 
