@@ -66,9 +66,9 @@ ${\frac{n(n+1)}{2}}$
 
 De esta forma podemos encontrar la sumatoria desde $1$ hasta $a$ y también desde $1$ hasta $b$, pero lo que necesitamos en la sumatoria entre $a$ y $b$, la forma de resolver este intervalo es sencilla, solo hay que restar la sumatoria de Gauss donde $n$ es igual a $a-1$ a la sumatoria de Gauss donde $n$ es igual a $b$, de forma que se incluyan los extremos del intervalo en la sumatoria.
 
-    1----------------L
-    1------------------------------------------------------------R
-                     L-------------------------------------------R
+    1----------------a
+    1------------------------------------------------------------b
+                     a-------------------------------------------b
 
 Luego de encontrar la sumatoria en el intervalo con esta sencilla resta, solo queda ver si el número es divisible entre $3$.
 
