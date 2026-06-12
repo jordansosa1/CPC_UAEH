@@ -100,7 +100,7 @@ Dadas las restricciones de la salida, la rana debe robar en la tercera columna.
 
 ### C++
 
-
+#### Autor: Jordan
 ```cpp
 #include <bits/stdc++.h>
 
