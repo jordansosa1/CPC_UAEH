@@ -58,14 +58,16 @@ Masha recogió $2$ semillas en total.
 ## Propuesta de solución
 ### Autor: Jordan
 
-Este es un clásico problema de "lo que te describimos, eso no es", porque realmente, no nos importa lo que pasa en cada segundo, podemos saber 
+Este es un clásico problema de "lo que te describimos, eso no es", porque realmente, no nos importa lo que pasa en cada segundo, porque cada operación se cancela con la siguiente, como se menciona en la descripción, la respuesta oscila entre $0$ y $x$. Solo hay que notar que en los segundos impares lleva $x$ semillas, y en los segundos pares lleva $0$ semillas.
+
+La respuesta depende de si el ultimo segundo es par o impar.
 
 ## Implementación
-
+Por cada caso podemos leer las semillas y los segundos, comprobar si el último segundo es par o impar con el módulo de $2$; si segundos es impar la respuesta es $x$, si segundos es impar, la respuesta es $0$.
 
 ### C++
 
-
+#### Autor: mae
 ```cpp
 #include <bits/stdc++.h>
 
@@ -73,8 +75,6 @@ using namespace std;
 
 int main()
 {
-    cin.tie(0); ios::sync_with_stdio(false);
-
     int casos;
     cin >> casos;
     for (int i = 0; i < casos; i++) {
